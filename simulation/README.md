@@ -10,7 +10,7 @@
 ## Requirements
 
 - OPM Flow, with the `flow` executable on `PATH`.
-  OPM Flow version used for the published datasets: **2026-04: fill in**.
+  OPM Flow version used for the published datasets: **2026-04**.
 - The OPM Python bindings (`opm` package, providing `opm.io.ecl.ESmry`) to read summary files.
 - Python with `numpy` and `pandas`.
 
