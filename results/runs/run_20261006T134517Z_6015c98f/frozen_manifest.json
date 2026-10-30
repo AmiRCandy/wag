@@ -1,0 +1,1985 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "models_frozen": true,
+  "B": {
+    "rows": 4967,
+    "fingerprint": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_B_train.csv",
+      "sha256": "56f11f281d7133dc0d1ef9e92578c901d7740375e68c8bb4be2670e8f2cbbd3f",
+      "bytes": 2829998
+    },
+    "row_ids_hash": "ffed06b70f804cbdabd7976b487d250b17fab9ae8dc5444acc484164c18665b4",
+    "source": "OPM_SPE5_simulation",
+    "family": "B"
+  },
+  "primary_model_id": "NN_MLP",
+  "model_ids": [
+    "LinearRegression",
+    "LinearRegression_GUIDED",
+    "Ridge",
+    "Ridge_GUIDED",
+    "Lasso",
+    "Lasso_GUIDED",
+    "ElasticNet",
+    "ElasticNet_GUIDED",
+    "KNN",
+    "SVR_rbf",
+    "SVR_rbf_GUIDED",
+    "RandomForest",
+    "RandomForest_GUIDED",
+    "ExtraTrees",
+    "ExtraTrees_GUIDED",
+    "GradientBoosting",
+    "GradientBoosting_GUIDED",
+    "XGBoost",
+    "XGBoost_GUIDED",
+    "LightGBM",
+    "LightGBM_GUIDED",
+    "NN_MLP",
+    "NN_PINN_HARD"
+  ],
+  "models": {
+    "LinearRegression": {
+      "model_id": "LinearRegression",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.joblib",
+        "metadata": "final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.joblib",
+          "sha256": "b3d4244f318cda6753af9e8b0c8353aa050b4e4f61aa99c10cc2f37e3e40a8c0",
+          "bytes": 2516
+        },
+        "final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.metadata.json",
+          "sha256": "6f3ad0c15d25baaf7c02ae7c20d37a085d121b77549e833c6258be4dfad71765",
+          "bytes": 9469
+        }
+      },
+      "configuration_hash": "6fe00e309d90a91dfe30787e9a1d71e550508ad1e2d69281d79a818b2ff3f89d",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.6824736699510745,
+          6.385008446860212,
+          5.1569761368434825,
+          2.6888412424872135,
+          -2.9794308305459567,
+          4.227511586460051,
+          7.444896367685425,
+          1.1879734934932693,
+          9.989753140973631,
+          3.8195898759307734,
+          3.354968040918813,
+          3.06069783024964,
+          10.657107362349528,
+          2.2066504882869915,
+          3.908741649060477,
+          3.162374284367068
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "LinearRegression_GUIDED": {
+      "model_id": "LinearRegression_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.joblib",
+        "metadata": "final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.joblib",
+          "sha256": "ffd2004697cf202fc6e20cb3150da4384914140293d2d347388e5f93a74e8fe5",
+          "bytes": 2771
+        },
+        "final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.metadata.json",
+          "sha256": "3ee9794687cccc40bea903d53b53bd117e33986655addc5affb65fe474f31df9",
+          "bytes": 10004
+        }
+      },
+      "configuration_hash": "9b7b52103ab249c7bbffba302ac0013d08ea38b5daca96bb1f520779273b033b",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.5842677067717275,
+          6.163419435628585,
+          5.052998581058464,
+          2.6253209879952317,
+          -2.8827488980313167,
+          4.190663917502465,
+          7.335549398123293,
+          1.2550310537116833,
+          10.912490045305287,
+          3.8193623195931017,
+          3.3708446383578203,
+          3.0504697797063405,
+          10.65935353662785,
+          2.2163489787460073,
+          3.8183674786074007,
+          3.141474425998382
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          -0.5842677067717275,
+          6.163419435628585,
+          5.052998581058464,
+          2.6253209879952317,
+          -2.8827488980313167,
+          4.190663917502465,
+          7.335549398123293,
+          1.2550310537116833,
+          10.912490045305287,
+          3.8193623195931017,
+          3.3708446383578203,
+          3.0504697797063405,
+          10.65935353662785,
+          2.2163489787460073,
+          3.8183674786074007,
+          3.141474425998382
+        ]
+      }
+    },
+    "Ridge": {
+      "model_id": "Ridge",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.joblib",
+        "metadata": "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.joblib",
+          "sha256": "0279f9352197548af5d362a0ace79cf277df1e330943a1c2cadd8a73cdc57e79",
+          "bytes": 2416
+        },
+        "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.metadata.json",
+          "sha256": "bf4ef02f34ed591536fc42d4e47c298597fa18b7e0a85c11124b37893434dce5",
+          "bytes": 9462
+        }
+      },
+      "configuration_hash": "46ee7fd2053ec21b4c9120d8414ec17669b395b147e08685329568d8293dfd05",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.6531610847813201,
+          6.326482031808045,
+          5.129606704748412,
+          2.656012818921254,
+          -2.9427870376261542,
+          4.219343877606782,
+          7.40345072436542,
+          1.2178044043040823,
+          10.230710852815916,
+          3.8369916253807186,
+          3.3755199609403657,
+          3.066372467987632,
+          10.636426175442098,
+          2.220672768333577,
+          3.9172571241382346,
+          3.1457544090186405
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "Ridge_GUIDED": {
+      "model_id": "Ridge_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.joblib",
+        "metadata": "final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.joblib",
+          "sha256": "5f610a44b1f5d9d94dbb4314b18fc5a64ac6c97124ca7b012a6eaefa6eab5617",
+          "bytes": 2659
+        },
+        "final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.metadata.json",
+          "sha256": "0b60baa4764155dcee64fa3f15ae4bdae9551678df36052fc86efe0894b3edfd",
+          "bytes": 9995
+        }
+      },
+      "configuration_hash": "21e6ca335392dd18355efbb342fb048ddff38629bb91abd739a15577a1851036",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.5564991848564778,
+          6.1272001078896245,
+          5.019008363605598,
+          2.650513867337603,
+          -2.7969458340168303,
+          4.13926024247905,
+          7.318114920552349,
+          1.2802818650130972,
+          11.096823668300773,
+          3.852354995234806,
+          3.417198528902763,
+          3.0712552890552627,
+          10.627854469898839,
+          2.2655198957577047,
+          3.880595538171844,
+          3.109946534078475
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          -0.5564991848564778,
+          6.1272001078896245,
+          5.019008363605598,
+          2.650513867337603,
+          -2.7969458340168303,
+          4.13926024247905,
+          7.318114920552349,
+          1.2802818650130972,
+          11.096823668300773,
+          3.852354995234806,
+          3.417198528902763,
+          3.0712552890552627,
+          10.627854469898839,
+          2.2655198957577047,
+          3.880595538171844,
+          3.109946534078475
+        ]
+      }
+    },
+    "Lasso": {
+      "model_id": "Lasso",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.joblib",
+        "metadata": "final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.joblib",
+          "sha256": "252bb9f4b982513af25e4e4b68287f9ce4b075be7810415227b24a9e469fd74a",
+          "bytes": 2461
+        },
+        "final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.metadata.json",
+          "sha256": "6d0c9a955ba03052a32e2963afeb9cd359c2d0dc7592f2045d855cf124fe04bf",
+          "bytes": 9487
+        }
+      },
+      "configuration_hash": "2bf39516592c0457ddc1ed1b6511cee2db6b2c4cfad208eb471f915e23ec6e9d",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.6104440190852469,
+          6.265876712486671,
+          5.0629580402751415,
+          2.3589959135977727,
+          -2.85298234261286,
+          4.228964405766354,
+          7.391957593858671,
+          1.3591459755778277,
+          11.147449561601272,
+          4.195385606884011,
+          3.330734459702185,
+          2.87221329333728,
+          10.484121705307986,
+          2.198510702305699,
+          4.348094347521492,
+          3.293972249772189
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "Lasso_GUIDED": {
+      "model_id": "Lasso_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.joblib",
+        "metadata": "final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.joblib",
+          "sha256": "974e46323485a990367588470f362d1fdee9f7ef45819fd6bf954832a1510b08",
+          "bytes": 2721
+        },
+        "final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.metadata.json",
+          "sha256": "92e1df690ad1b23356e25fedacab190b741c0e327e5ac797ab29f1048cc58fc9",
+          "bytes": 10018
+        }
+      },
+      "configuration_hash": "e42886c6ee2f61760b3205bd74fcc22a373edf3eb4fb7275d789bc8504b28066",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.5377501134578546,
+          6.132539622168698,
+          4.9929355613489275,
+          2.3495674838723906,
+          -2.7362429226699856,
+          4.191724965362047,
+          7.316259348332444,
+          1.4026332341408065,
+          11.664884204301131,
+          4.156825955345446,
+          3.3297863140057204,
+          2.8571418687416594,
+          10.468339990819334,
+          2.1994365253543378,
+          4.273357148145792,
+          3.2890161227926176
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          -0.5377501134578546,
+          6.132539622168698,
+          4.9929355613489275,
+          2.3495674838723906,
+          -2.7362429226699856,
+          4.191724965362047,
+          7.316259348332444,
+          1.4026332341408065,
+          11.664884204301131,
+          4.156825955345446,
+          3.3297863140057204,
+          2.8571418687416594,
+          10.468339990819334,
+          2.1994365253543378,
+          4.273357148145792,
+          3.2890161227926176
+        ]
+      }
+    },
+    "ElasticNet": {
+      "model_id": "ElasticNet",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.joblib",
+        "metadata": "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.joblib",
+          "sha256": "7e4c072ba3b2d86d686eda1833b539d5b268f17c6a6544c7c2fc3de46fd3dc6f",
+          "bytes": 2484
+        },
+        "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.metadata.json",
+          "sha256": "eba6e8e370c75d146497354368b9b3772805a468141a6871152d8a413c2cca88",
+          "bytes": 9502
+        }
+      },
+      "configuration_hash": "5da76d218502c16d80aae258ca6284956d1b5e05d35e2b3c1b8fa17eecb1b9a3",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.25547180152645454,
+          5.531474512493771,
+          4.755138482850117,
+          2.0665120813432742,
+          -2.439313300733718,
+          4.130561789080436,
+          6.839583265813731,
+          1.6998925437849852,
+          13.790245189206978,
+          4.283507331625009,
+          3.5966846199601505,
+          2.9990703751895023,
+          10.245396270036462,
+          2.4211336354182986,
+          4.265015230335929,
+          3.019454180305566
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "ElasticNet_GUIDED": {
+      "model_id": "ElasticNet_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.joblib",
+        "metadata": "final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.joblib",
+          "sha256": "09ea8bee3ccb8297e1fdd3cd99265c97361dabcae962349b0e6f25f7d351fb68",
+          "bytes": 2739
+        },
+        "final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.metadata.json",
+          "sha256": "d3f3fb5e294c75f7bb5dfd84320368d5a5ef6ff35c74c0a7ab41bf8487a95aee",
+          "bytes": 10035
+        }
+      },
+      "configuration_hash": "503bf97583f47775aac964148b010bdd3e9382348aaa7162658023102a34cfdd",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.23874175834780553,
+          5.615956300413185,
+          4.825380859221342,
+          2.174982192542626,
+          -2.3796134597894563,
+          4.181170242573369,
+          6.889683445129572,
+          1.6046736485622546,
+          12.83768472836082,
+          4.227820556648051,
+          3.5130827996956606,
+          2.9500979223457815,
+          10.151642573602398,
+          2.30313050011009,
+          4.254835979254369,
+          3.1508499118432898
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          -0.23874175834780553,
+          5.615956300413185,
+          4.825380859221342,
+          2.174982192542626,
+          -2.3796134597894563,
+          4.181170242573369,
+          6.889683445129572,
+          1.6046736485622546,
+          12.83768472836082,
+          4.227820556648051,
+          3.5130827996956606,
+          2.9500979223457815,
+          10.151642573602398,
+          2.30313050011009,
+          4.254835979254369,
+          3.1508499118432898
+        ]
+      }
+    },
+    "KNN": {
+      "model_id": "KNN",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.joblib",
+        "metadata": "final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.joblib",
+          "sha256": "8938f5a87aa29876ccc823417e42b41dd769021b837f7e6b9326ee0839fb8ac9",
+          "bytes": 593908
+        },
+        "final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.metadata.json",
+          "sha256": "278bed296e0a04dc079179c50c1c5648241663d4fffb2ef286836f2f884e2057",
+          "bytes": 9459
+        }
+      },
+      "configuration_hash": "7d0ec1b9521729948ae9e0c414d5a76bee7d66f911ab6a870904826d3446e17d",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          2.5634212493896484,
+          8.544241768973214,
+          4.989978654044015,
+          5.257028307233538,
+          0.771833964756557,
+          1.5631752014160156,
+          8.48804201398577,
+          -0.9039230346679688,
+          12.980159214564733,
+          2.911048344203404,
+          1.4203425816127233,
+          -1.297625950404576,
+          8.664666857038226,
+          1.924053737095424,
+          8.48871558053153,
+          4.20585332598005
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "SVR_rbf": {
+      "model_id": "SVR_rbf",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.joblib",
+        "metadata": "final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.joblib",
+          "sha256": "0f053626d22fdba576b7ba122db49029856a145f9ab8fed7f99c333e32356015",
+          "bytes": 581145
+        },
+        "final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.metadata.json",
+          "sha256": "e2009c47891452ad63596e137cb3863fdccdd0b60a07ebe1f964eb7798800d2a",
+          "bytes": 9511
+        }
+      },
+      "configuration_hash": "dbd2f9494ebd5f5ef642750909916769c05cb6bc4887f217226af69792c3ca2b",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.15483090013545775,
+          9.4155122913986,
+          5.788899816333774,
+          2.5424311481753072,
+          1.0047291731640229,
+          5.065221282761611,
+          6.819583516499659,
+          -0.8244297815664163,
+          16.588791934289507,
+          4.21446308303641,
+          1.6760232473243852,
+          3.26867114528601,
+          7.01515991580758,
+          1.2617708532540286,
+          6.782476975188789,
+          0.4401105009288351
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "SVR_rbf_GUIDED": {
+      "model_id": "SVR_rbf_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.joblib",
+        "metadata": "final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.joblib",
+          "sha256": "07a95560953850a1d2da7430d4b383bf3dfdf7a5a6c70d7369e7a430b3ced2c3",
+          "bytes": 587916
+        },
+        "final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.metadata.json",
+          "sha256": "c70d05d51bc7471b7626d0aba1f7a9f2a05144e43fd1df5c6a7f39293d6af506",
+          "bytes": 10043
+        }
+      },
+      "configuration_hash": "074055e0869de3db1b10493812f4e5aa056ab5813dee62a8294b019a1397d710",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.14709932632807687,
+          9.41546783016038,
+          5.776667359876545,
+          2.6742834142459277,
+          0.720989064551623,
+          5.090295058275906,
+          6.859337371948871,
+          -0.8292117252156124,
+          16.54279301913326,
+          4.214679671647426,
+          1.637522445094023,
+          3.2334694625801417,
+          7.015122286744089,
+          1.257591931688912,
+          6.782304189870447,
+          0.5062014984113183
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          0.14709932632807687,
+          9.41546783016038,
+          5.776667359876545,
+          2.6742834142459277,
+          0.720989064551623,
+          5.090295058275906,
+          6.859337371948871,
+          -0.8292117252156124,
+          16.54279301913326,
+          4.214679671647426,
+          1.637522445094023,
+          3.2334694625801417,
+          7.015122286744089,
+          1.257591931688912,
+          6.782304189870447,
+          0.5062014984113183
+        ]
+      }
+    },
+    "RandomForest": {
+      "model_id": "RandomForest",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.joblib",
+        "metadata": "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.joblib",
+          "sha256": "912d601ca2900cd6d85688094f43640882907fe68a8da6593a88e573f8175633",
+          "bytes": 36721308
+        },
+        "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.metadata.json",
+          "sha256": "7231f89c8336a1aa5f2c129d64ffb1524da0bbdb1a1e5e2c035901427419ae05",
+          "bytes": 9714
+        }
+      },
+      "configuration_hash": "699c80e960558714135579350adcd5db8455efaec08b51f3e3e6f1ce698351d0",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.901229317030579,
+          9.23101551709604,
+          5.749830276605882,
+          3.1665866029453182,
+          1.5137478493571916,
+          5.54245937748939,
+          8.319010823416333,
+          -3.1552063238746926,
+          14.196265385181183,
+          4.005065285125793,
+          2.1157673804419392,
+          4.227112817388362,
+          7.76407494339363,
+          1.4015715392074257,
+          5.848678473558374,
+          -3.242129281727152
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "RandomForest_GUIDED": {
+      "model_id": "RandomForest_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.joblib",
+        "metadata": "final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.joblib",
+          "sha256": "ce964d702eed687831cfc5292c4b1c1cb36bd11fc167b42ee7c52c424541c080",
+          "bytes": 54945553
+        },
+        "final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.metadata.json",
+          "sha256": "6415d82e0fa2d697667ab20cba507293a4d65d105ae30692b685fadd974d2f50",
+          "bytes": 10243
+        }
+      },
+      "configuration_hash": "a72e643f4cdd5391ff11848b6479a28576bf933d1b51759e8ab56fdff86f3a1f",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          1.09479185523366,
+          9.221017318212464,
+          5.793057881646335,
+          3.1610384045185467,
+          1.5402744009111693,
+          5.44384183903182,
+          8.342832698398167,
+          -3.125659749086903,
+          14.299664146045187,
+          4.010625323043298,
+          2.053072830914226,
+          4.204896995506874,
+          7.831419184864654,
+          1.4069163523079762,
+          5.907854043879692,
+          -3.219770862436728
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          1.09479185523366,
+          9.221017318212464,
+          5.793057881646335,
+          3.1610384045185467,
+          1.5402744009111693,
+          5.44384183903182,
+          8.342832698398167,
+          -3.125659749086903,
+          14.299664146045187,
+          4.010625323043298,
+          2.053072830914226,
+          4.204896995506874,
+          7.831419184864654,
+          1.4069163523079762,
+          5.907854043879692,
+          -3.219770862436728
+        ]
+      }
+    },
+    "ExtraTrees": {
+      "model_id": "ExtraTrees",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.joblib",
+        "metadata": "final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.joblib",
+          "sha256": "c8cdd9723e65d3dcceadbdc4414827a6e3ccc7e402faeeae626dfecac48bb62a",
+          "bytes": 157817480
+        },
+        "final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.metadata.json",
+          "sha256": "dead6842be4daf27545fd12f803506fe3c55128b283762dde0d0c19ba396ef16",
+          "bytes": 9708
+        }
+      },
+      "configuration_hash": "c2805450f87e5ffcf6ec64534974f59c3b7d50d9e4010efbb1bc22ed00f862a9",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          2.099994659423828,
+          9.515701293945312,
+          5.5899810791015625,
+          2.925220489501953,
+          1.7702007293701172,
+          6.529880523681641,
+          7.545578002929687,
+          -2.8798370361328125,
+          16.688766479492188,
+          4.314785003662109,
+          2.505756378173828,
+          4.755283355712891,
+          7.114864349365234,
+          1.3620967864990234,
+          6.882530212402344,
+          -3.982952117919922
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "ExtraTrees_GUIDED": {
+      "model_id": "ExtraTrees_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.joblib",
+        "metadata": "final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.joblib",
+          "sha256": "18c295d05cfd7bbef83526338502b782ba2a89bd8ea324478efc01b9127e5940",
+          "bytes": 83045379
+        },
+        "final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.metadata.json",
+          "sha256": "8fe3bee1da961c8a751f17a1a3d4064d8fbf0e257e4787b65740a6cb7d7ca879",
+          "bytes": 10237
+        }
+      },
+      "configuration_hash": "5f9d39dabaa7ebe95a81a60ec9605be17bd1a4c4c1611d7a72b40665eb03f7d6",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          1.6768957664313655,
+          9.506886931460077,
+          5.665361123072804,
+          2.9334560896706954,
+          1.6418424947380654,
+          6.298915355661514,
+          7.669730489645123,
+          -3.0571423861442097,
+          16.688595240910846,
+          4.310787746837122,
+          2.4789103521028233,
+          4.485346548248163,
+          7.1177554317117195,
+          1.4061417154407854,
+          6.880802197955902,
+          -3.932713346499817
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          1.6768957664313655,
+          9.506886931460077,
+          5.665361123072804,
+          2.9334560896706954,
+          1.6418424947380654,
+          6.298915355661514,
+          7.669730489645123,
+          -3.0571423861442097,
+          16.688595240910846,
+          4.310787746837122,
+          2.4789103521028233,
+          4.485346548248163,
+          7.1177554317117195,
+          1.4061417154407854,
+          6.880802197955902,
+          -3.932713346499817
+        ]
+      }
+    },
+    "GradientBoosting": {
+      "model_id": "GradientBoosting",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.joblib",
+        "metadata": "final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.joblib",
+          "sha256": "4f3fd4aaca495554f9452e93777d056e9bfe57e584963539ff78fca6409e6a5e",
+          "bytes": 574279
+        },
+        "final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.metadata.json",
+          "sha256": "32510887664fe441d32fba3000a8ddd9cc54c9ce021d7c5aa877bc31aed2e136",
+          "bytes": 9681
+        }
+      },
+      "configuration_hash": "907ac0a1eeb1b0b9065e2f0c40acad2cd71edf43f196d0caa0676fe9ba28268c",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.29491791770635195,
+          9.566150128614135,
+          5.8358646106867385,
+          2.7452464255673705,
+          1.4948632250081058,
+          5.896740431999409,
+          7.7960044414068586,
+          -3.3515822938367337,
+          16.690932599725237,
+          4.235783461119373,
+          2.4650834792235674,
+          3.859621740231995,
+          7.415117088216895,
+          1.1868149818473517,
+          6.760220701954033,
+          -3.710075919177847
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "GradientBoosting_GUIDED": {
+      "model_id": "GradientBoosting_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.joblib",
+        "metadata": "final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.joblib",
+          "sha256": "cd35f1becfaec0ad92590876931d581eb44e4d1639facb6848a2dd5d9722e035",
+          "bytes": 660785
+        },
+        "final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.metadata.json",
+          "sha256": "7f547f1ff27508288aad7eb3efb51d5b37dc6fee1938a350d0d63dc9fc922d07",
+          "bytes": 10216
+        }
+      },
+      "configuration_hash": "a8591b69210715ce56dc8567a2f2972b745e09bde078584eeb683e6dba13293d",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.8584193413653849,
+          9.674415891089161,
+          6.275498524872286,
+          2.9546162373507574,
+          1.467108347427321,
+          5.273249886746033,
+          7.944237707950262,
+          -2.618199930602601,
+          16.237781929083564,
+          3.952897585437891,
+          1.918834005539086,
+          3.702183598007672,
+          7.892109171979251,
+          1.5038238127891663,
+          6.479668661619157,
+          -3.276815923309631
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          0.8584193413653849,
+          9.674415891089161,
+          6.275498524872286,
+          2.9546162373507574,
+          1.467108347427321,
+          5.273249886746033,
+          7.944237707950262,
+          -2.618199930602601,
+          16.237781929083564,
+          3.952897585437891,
+          1.918834005539086,
+          3.702183598007672,
+          7.892109171979251,
+          1.5038238127891663,
+          6.479668661619157,
+          -3.276815923309631
+        ]
+      }
+    },
+    "XGBoost": {
+      "model_id": "XGBoost",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.joblib",
+        "metadata": "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.joblib",
+          "sha256": "86c2883d4fbd49fead224a88634199a59a2cdd9c67955bf2767ae901757bed39",
+          "bytes": 1256395
+        },
+        "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.metadata.json",
+          "sha256": "0d8756878f44edbb10e51dc9163818d78706217a530f23cbe88b507b49de25e4",
+          "bytes": 9855
+        }
+      },
+      "configuration_hash": "3967b49c098a215643cebb3ff0b71b4e584e5867d75238cc0479754ced0601e3",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          1.3891199827194214,
+          9.667903900146484,
+          5.983010768890381,
+          2.902514934539795,
+          1.5146353244781494,
+          6.1231842041015625,
+          7.920249938964844,
+          -2.9517807960510254,
+          16.57892417907715,
+          4.311707019805908,
+          2.223395824432373,
+          4.5140557289123535,
+          7.342184543609619,
+          1.3010146617889404,
+          6.824209213256836,
+          -3.6612026691436768
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "XGBoost_GUIDED": {
+      "model_id": "XGBoost_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.joblib",
+        "metadata": "final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.joblib",
+          "sha256": "0a0c6cf1a2b4ab6c80cfac28690e175dda440c1cbd804e708c3d6ba6b8928c72",
+          "bytes": 861269
+        },
+        "final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.metadata.json",
+          "sha256": "bf3be0654b104f27acbdf3baf063ed90ce4701030bc4c2bf67746b38d219688a",
+          "bytes": 10388
+        }
+      },
+      "configuration_hash": "5534c7620c76f26cb7fc456707cfd1e940c96d2c6aaec014c115bc31eb776227",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          1.082140564918518,
+          9.579642295837402,
+          6.166049003601074,
+          2.672171115875244,
+          1.4655588865280151,
+          5.803286552429199,
+          8.039871215820312,
+          -2.9282708168029785,
+          16.28194808959961,
+          4.1423020362854,
+          2.2652111053466797,
+          4.235378742218018,
+          7.526971817016602,
+          1.423503041267395,
+          6.213550090789795,
+          -3.2700583934783936
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          1.082140564918518,
+          9.579642295837402,
+          6.166049003601074,
+          2.672171115875244,
+          1.4655588865280151,
+          5.803286552429199,
+          8.039871215820312,
+          -2.9282708168029785,
+          16.28194808959961,
+          4.1423020362854,
+          2.2652111053466797,
+          4.235378742218018,
+          7.526971817016602,
+          1.423503041267395,
+          6.213550090789795,
+          -3.2700583934783936
+        ]
+      }
+    },
+    "LightGBM": {
+      "model_id": "LightGBM",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.joblib",
+        "metadata": "final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.joblib",
+          "sha256": "4afc13c6fdddc0089ea4dd05318863271f0eea31be059c1700c1cbe9b2e1e7ac",
+          "bytes": 2063111
+        },
+        "final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.metadata.json",
+          "sha256": "97a26234bcb9996bf5ff32b04ffbf949f69052c4259152b0b53d7b82d394eae9",
+          "bytes": 9805
+        }
+      },
+      "configuration_hash": "1e05deac919fee0cb9bb9cd6bfe65f87b32ce0055749a8ba7d363ccbb3be3ff8",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          1.714452126602186,
+          9.618043483153686,
+          5.72290515704957,
+          2.8903727713244867,
+          1.7456557712963061,
+          6.465209773070403,
+          7.600154586894754,
+          -2.974168802276627,
+          16.592733825052772,
+          4.392546966892119,
+          2.2866719546784284,
+          4.670245644430515,
+          7.327937370883699,
+          1.3047691013237566,
+          6.755111829995803,
+          -3.9977092918903634
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "LightGBM_GUIDED": {
+      "model_id": "LightGBM_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.joblib",
+        "metadata": "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.joblib",
+          "sha256": "25f0d14f197adb0afc220b434e66d763ee3bd7f513c077cd3d70e836814df6cc",
+          "bytes": 768881
+        },
+        "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.metadata.json",
+          "sha256": "bb1349f6206070160bc60a1bf7d86c3cc738cd9d6ca563a9254504049aa9570a",
+          "bytes": 10338
+        }
+      },
+      "configuration_hash": "227b34dec414bafa9423cd862dcc886e32ccb8d72d250e4352d2a8cb36416184",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.7964004295396797,
+          9.572841804155615,
+          6.287357443124577,
+          2.42046604234374,
+          1.5299285086945695,
+          6.078927478380706,
+          8.300943536192715,
+          -3.0215390695637283,
+          14.976141787264055,
+          4.1903038768159275,
+          1.9203203572009284,
+          4.217684824793602,
+          8.195968844921788,
+          1.4945154883145126,
+          6.185407515432055,
+          -3.7912288875813807
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          0.7964004295396797,
+          9.572841804155615,
+          6.287357443124577,
+          2.42046604234374,
+          1.5299285086945695,
+          6.078927478380706,
+          8.300943536192715,
+          -3.0215390695637283,
+          14.976141787264055,
+          4.1903038768159275,
+          1.9203203572009284,
+          4.217684824793602,
+          8.195968844921788,
+          1.4945154883145126,
+          6.185407515432055,
+          -3.7912288875813807
+        ]
+      }
+    },
+    "NN_MLP": {
+      "model_id": "NN_MLP",
+      "kind": "neural",
+      "files": {
+        "state": "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.pt",
+        "preprocessor": "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.preprocessing.joblib",
+        "metadata": "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.pt": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.pt",
+          "sha256": "56c3556d04eca4def7756c668f8e52820b01d7e9db19886e087b094403dfc3c1",
+          "bytes": 75005
+        },
+        "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.preprocessing.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.preprocessing.joblib",
+          "sha256": "9551ff51498a6399cdf3710acf3ae5c35aaf7ffa502478a451fdb6ffdd4750af",
+          "bytes": 2051
+        },
+        "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.metadata.json",
+          "sha256": "a032ce6ea3bd80b7dc005380c1fa785984e68269949767ee47bc67ce4b968413",
+          "bytes": 182724
+        }
+      },
+      "configuration_hash": "40f2b50640e7eeb4e1c86871ae1992a90ac498253e3ee0fb11ee97b980cfa769",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.04000483453273773,
+          9.72917652130127,
+          5.7068281173706055,
+          1.9984322786331177,
+          0.9030925631523132,
+          6.705440044403076,
+          4.9569091796875,
+          -2.121222972869873,
+          15.99487018585205,
+          3.8339672088623047,
+          2.026510000228882,
+          4.509469985961914,
+          8.159808158874512,
+          1.5174274444580078,
+          5.975739479064941,
+          -3.866912603378296
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    },
+    "NN_PINN_HARD": {
+      "model_id": "NN_PINN_HARD",
+      "kind": "neural",
+      "files": {
+        "state": "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.pt",
+        "preprocessor": "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.preprocessing.joblib",
+        "metadata": "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.pt": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.pt",
+          "sha256": "7c053518cc2e8e6d24a7509df0dfe1737ef22f7205beb7071766160318d23508",
+          "bytes": 75383
+        },
+        "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.preprocessing.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.preprocessing.joblib",
+          "sha256": "9551ff51498a6399cdf3710acf3ae5c35aaf7ffa502478a451fdb6ffdd4750af",
+          "bytes": 2051
+        },
+        "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.metadata.json",
+          "sha256": "696d236f4ad2b5177e7d982c18f2d93a7660c026ccf4106b8854fbbddd5624eb",
+          "bytes": 414126
+        }
+      },
+      "configuration_hash": "aacb9000c338dbf6fe318ee2fe05151a156b80d2a7c03fffadb63508eeafc662",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -1.192718505859375,
+          9.295722961425781,
+          5.6605682373046875,
+          0.848876953125,
+          -0.23253631591796875,
+          5.1844940185546875,
+          6.197967529296875,
+          -0.9350967407226562,
+          16.44062042236328,
+          3.2011260986328125,
+          -0.17073822021484375,
+          3.6525039672851562,
+          7.1235809326171875,
+          1.1701431274414062,
+          6.1451873779296875,
+          -1.147979736328125
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    }
+  },
+  "refit_identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "validation_identity_hash": "80c1e3eb76111a559dff8d138bde83698357d3a576a081a3a7071fbfdebbfbf6",
+  "protocol": "holdout",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "tqdm": "4.67.1",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.7.0",
+    "torch": "2.10.0+cu128"
+  },
+  "config": {
+    "train_csv": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_B_train.csv",
+    "test_csv": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_A_test.csv",
+    "run_dir": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f",
+    "classical_config": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/classical.json",
+    "neural_config": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/neural.json",
+    "model_scope": "all",
+    "resume": false,
+    "workers": 8,
+    "threads": 1,
+    "device": "cuda:3",
+    "seed": 42,
+    "validation": "holdout",
+    "validation_fraction": 0.2,
+    "inner_folds": 3,
+    "outer_folds": 5,
+    "search": "randomized",
+    "search_candidates": 20,
+    "injection_mode": "volumes"
+  },
+  "skipped_comparisons": [
+    {
+      "model_id": "KNN_GUIDED",
+      "reason": "not validated in every required outer fold",
+      "fold_statuses": [
+        {
+          "fold": 0,
+          "status": "skipped"
+        }
+      ]
+    }
+  ],
+  "OOD_policy": {
+    "action": "diagnose_only",
+    "exclude_rows": false,
+    "prediction_clamp": false,
+    "raw_range": "any canonical raw input outside saved training min/max",
+    "standardized_features": "any absolute saved-scaled active feature exceeds threshold",
+    "standardized_threshold": 3.0
+  },
+  "A_outcomes_accessed": false,
+  "A_inputs_accessed": false,
+  "probe_file": "refit_probe.json",
+  "artifact_fingerprints": {
+    "final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.joblib",
+      "sha256": "b3d4244f318cda6753af9e8b0c8353aa050b4e4f61aa99c10cc2f37e3e40a8c0",
+      "bytes": 2516
+    },
+    "final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/394eed66c04b63d2662d93c4756b942e4f1abac25641dc9e609d06291e5e669d.metadata.json",
+      "sha256": "6f3ad0c15d25baaf7c02ae7c20d37a085d121b77549e833c6258be4dfad71765",
+      "bytes": 9469
+    },
+    "final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.joblib",
+      "sha256": "ffd2004697cf202fc6e20cb3150da4384914140293d2d347388e5f93a74e8fe5",
+      "bytes": 2771
+    },
+    "final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/90d5534984c22c936e33f87df5ee611a676b8762b7f9c419c55338752861b8ae.metadata.json",
+      "sha256": "3ee9794687cccc40bea903d53b53bd117e33986655addc5affb65fe474f31df9",
+      "bytes": 10004
+    },
+    "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.joblib",
+      "sha256": "0279f9352197548af5d362a0ace79cf277df1e330943a1c2cadd8a73cdc57e79",
+      "bytes": 2416
+    },
+    "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.metadata.json",
+      "sha256": "bf4ef02f34ed591536fc42d4e47c298597fa18b7e0a85c11124b37893434dce5",
+      "bytes": 9462
+    },
+    "final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.joblib",
+      "sha256": "5f610a44b1f5d9d94dbb4314b18fc5a64ac6c97124ca7b012a6eaefa6eab5617",
+      "bytes": 2659
+    },
+    "final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/779c9d689a5ec28dd8707355aac2689900c05c6d8ac90c8f2060ebb7b7b73812.metadata.json",
+      "sha256": "0b60baa4764155dcee64fa3f15ae4bdae9551678df36052fc86efe0894b3edfd",
+      "bytes": 9995
+    },
+    "final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.joblib",
+      "sha256": "252bb9f4b982513af25e4e4b68287f9ce4b075be7810415227b24a9e469fd74a",
+      "bytes": 2461
+    },
+    "final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/eeed3deb90f4a83e4145c38462dfae950d2ff70a28b2328e3c6034ccea077bce.metadata.json",
+      "sha256": "6d0c9a955ba03052a32e2963afeb9cd359c2d0dc7592f2045d855cf124fe04bf",
+      "bytes": 9487
+    },
+    "final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.joblib",
+      "sha256": "974e46323485a990367588470f362d1fdee9f7ef45819fd6bf954832a1510b08",
+      "bytes": 2721
+    },
+    "final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/08f8e1c8e3d00335295f365ce08c8cde2cf50146558f90a5966e273d6838bf5f.metadata.json",
+      "sha256": "92e1df690ad1b23356e25fedacab190b741c0e327e5ac797ab29f1048cc58fc9",
+      "bytes": 10018
+    },
+    "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.joblib",
+      "sha256": "7e4c072ba3b2d86d686eda1833b539d5b268f17c6a6544c7c2fc3de46fd3dc6f",
+      "bytes": 2484
+    },
+    "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.metadata.json",
+      "sha256": "eba6e8e370c75d146497354368b9b3772805a468141a6871152d8a413c2cca88",
+      "bytes": 9502
+    },
+    "final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.joblib",
+      "sha256": "09ea8bee3ccb8297e1fdd3cd99265c97361dabcae962349b0e6f25f7d351fb68",
+      "bytes": 2739
+    },
+    "final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/6dc4eea30a0942ccc25742691142d998974387d23b0b2ac43a217a3ee2867192.metadata.json",
+      "sha256": "d3f3fb5e294c75f7bb5dfd84320368d5a5ef6ff35c74c0a7ab41bf8487a95aee",
+      "bytes": 10035
+    },
+    "final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.joblib",
+      "sha256": "8938f5a87aa29876ccc823417e42b41dd769021b837f7e6b9326ee0839fb8ac9",
+      "bytes": 593908
+    },
+    "final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/30ef7716505eaff9f1a11216cc765d7d3b3429b8988b95cf6383717f1620c8cd.metadata.json",
+      "sha256": "278bed296e0a04dc079179c50c1c5648241663d4fffb2ef286836f2f884e2057",
+      "bytes": 9459
+    },
+    "final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.joblib",
+      "sha256": "0f053626d22fdba576b7ba122db49029856a145f9ab8fed7f99c333e32356015",
+      "bytes": 581145
+    },
+    "final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/e20a2e45850ff26d1bbdb086f5bd4fe47caf3d63748409f0e6607308fc47eaaf.metadata.json",
+      "sha256": "e2009c47891452ad63596e137cb3863fdccdd0b60a07ebe1f964eb7798800d2a",
+      "bytes": 9511
+    },
+    "final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.joblib",
+      "sha256": "07a95560953850a1d2da7430d4b383bf3dfdf7a5a6c70d7369e7a430b3ced2c3",
+      "bytes": 587916
+    },
+    "final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/e2881cd8293930e484f4eea0c9e12aa5f976a8bd7c4298da363e803a4de94d2a.metadata.json",
+      "sha256": "c70d05d51bc7471b7626d0aba1f7a9f2a05144e43fd1df5c6a7f39293d6af506",
+      "bytes": 10043
+    },
+    "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.joblib",
+      "sha256": "912d601ca2900cd6d85688094f43640882907fe68a8da6593a88e573f8175633",
+      "bytes": 36721308
+    },
+    "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.metadata.json",
+      "sha256": "7231f89c8336a1aa5f2c129d64ffb1524da0bbdb1a1e5e2c035901427419ae05",
+      "bytes": 9714
+    },
+    "final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.joblib",
+      "sha256": "ce964d702eed687831cfc5292c4b1c1cb36bd11fc167b42ee7c52c424541c080",
+      "bytes": 54945553
+    },
+    "final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/1751cd4ce7288c872fa87748649fd48ea2de45e0f3b1b9f43318dd26929cad20.metadata.json",
+      "sha256": "6415d82e0fa2d697667ab20cba507293a4d65d105ae30692b685fadd974d2f50",
+      "bytes": 10243
+    },
+    "final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.joblib",
+      "sha256": "c8cdd9723e65d3dcceadbdc4414827a6e3ccc7e402faeeae626dfecac48bb62a",
+      "bytes": 157817480
+    },
+    "final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/a2a36a8b7059b77e03e5b6a3c3b56d2ae4fc9a3181a6e787b914d7020afa5f7e.metadata.json",
+      "sha256": "dead6842be4daf27545fd12f803506fe3c55128b283762dde0d0c19ba396ef16",
+      "bytes": 9708
+    },
+    "final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.joblib",
+      "sha256": "18c295d05cfd7bbef83526338502b782ba2a89bd8ea324478efc01b9127e5940",
+      "bytes": 83045379
+    },
+    "final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/a11973e2696de7dc912412d3f0ca652151b750945a826bfb3502834721eac647.metadata.json",
+      "sha256": "8fe3bee1da961c8a751f17a1a3d4064d8fbf0e257e4787b65740a6cb7d7ca879",
+      "bytes": 10237
+    },
+    "final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.joblib",
+      "sha256": "4f3fd4aaca495554f9452e93777d056e9bfe57e584963539ff78fca6409e6a5e",
+      "bytes": 574279
+    },
+    "final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/857f799076ec2e1bd67c4aded56ab666bda0705d134846f2e222928cbc28881e.metadata.json",
+      "sha256": "32510887664fe441d32fba3000a8ddd9cc54c9ce021d7c5aa877bc31aed2e136",
+      "bytes": 9681
+    },
+    "final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.joblib",
+      "sha256": "cd35f1becfaec0ad92590876931d581eb44e4d1639facb6848a2dd5d9722e035",
+      "bytes": 660785
+    },
+    "final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/f484108f6930e0819ff7e759af0042760563f445f93200db7f3065cd79383b93.metadata.json",
+      "sha256": "7f547f1ff27508288aad7eb3efb51d5b37dc6fee1938a350d0d63dc9fc922d07",
+      "bytes": 10216
+    },
+    "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.joblib",
+      "sha256": "86c2883d4fbd49fead224a88634199a59a2cdd9c67955bf2767ae901757bed39",
+      "bytes": 1256395
+    },
+    "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.metadata.json",
+      "sha256": "0d8756878f44edbb10e51dc9163818d78706217a530f23cbe88b507b49de25e4",
+      "bytes": 9855
+    },
+    "final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.joblib",
+      "sha256": "0a0c6cf1a2b4ab6c80cfac28690e175dda440c1cbd804e708c3d6ba6b8928c72",
+      "bytes": 861269
+    },
+    "final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d62691ecc426dd88fbdda9ef387ba1ad75839b44606a81551632f57fdae2cbd4.metadata.json",
+      "sha256": "bf3be0654b104f27acbdf3baf063ed90ce4701030bc4c2bf67746b38d219688a",
+      "bytes": 10388
+    },
+    "final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.joblib",
+      "sha256": "4afc13c6fdddc0089ea4dd05318863271f0eea31be059c1700c1cbe9b2e1e7ac",
+      "bytes": 2063111
+    },
+    "final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/4b37e85c8445700f06a52a032fd66f4976c7c006252c46870cee8fc702c2e600.metadata.json",
+      "sha256": "97a26234bcb9996bf5ff32b04ffbf949f69052c4259152b0b53d7b82d394eae9",
+      "bytes": 9805
+    },
+    "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.joblib",
+      "sha256": "25f0d14f197adb0afc220b434e66d763ee3bd7f513c077cd3d70e836814df6cc",
+      "bytes": 768881
+    },
+    "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.metadata.json",
+      "sha256": "bb1349f6206070160bc60a1bf7d86c3cc738cd9d6ca563a9254504049aa9570a",
+      "bytes": 10338
+    },
+    "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.pt": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.pt",
+      "sha256": "56c3556d04eca4def7756c668f8e52820b01d7e9db19886e087b094403dfc3c1",
+      "bytes": 75005
+    },
+    "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.preprocessing.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.preprocessing.joblib",
+      "sha256": "9551ff51498a6399cdf3710acf3ae5c35aaf7ffa502478a451fdb6ffdd4750af",
+      "bytes": 2051
+    },
+    "final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/b7b907020a6b1f1289aa8fd3153979d424cd0b89cd98aae484de0a60b2284865.metadata.json",
+      "sha256": "a032ce6ea3bd80b7dc005380c1fa785984e68269949767ee47bc67ce4b968413",
+      "bytes": 182724
+    },
+    "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.pt": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.pt",
+      "sha256": "7c053518cc2e8e6d24a7509df0dfe1737ef22f7205beb7071766160318d23508",
+      "bytes": 75383
+    },
+    "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.preprocessing.joblib": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.preprocessing.joblib",
+      "sha256": "9551ff51498a6399cdf3710acf3ae5c35aaf7ffa502478a451fdb6ffdd4750af",
+      "bytes": 2051
+    },
+    "final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.metadata.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/d33cebcc7ea3b1041f48ff8f2f52e0dfed4cee5566ab96bfc6a115f5c622a17e.metadata.json",
+      "sha256": "696d236f4ad2b5177e7d982c18f2d93a7660c026ccf4106b8854fbbddd5624eb",
+      "bytes": 414126
+    },
+    "training_manifest.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/training_manifest.json",
+      "sha256": "afec195f45bb4649bc5521f5f8f64549553bd852e7b921f7938d782691de85d6",
+      "bytes": 20168
+    },
+    "selection.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/selection.json",
+      "sha256": "b9ddfac52293c7436a5d5ad7c0729a3c03e5c44c8bf7ad16a5b9df817dac6310",
+      "bytes": 10804
+    },
+    "task_records.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/task_records.json",
+      "sha256": "bca3b1f28b6462bc99ee551f549f67c836e5c81236b8eb238ae975a74fd881eb",
+      "bytes": 21366987
+    },
+    "split_manifest.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/split_manifest.json",
+      "sha256": "5e5920ada36d38d94bf2309c32064f1b913d7dd810733eccf82907fe8de2089b",
+      "bytes": 3910388
+    },
+    "data_audit.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/data_audit.json",
+      "sha256": "a2bb1cba9466c02632f920884d47be3c27103c1343d4488dc1a0b9732b6a8c92",
+      "bytes": 3439
+    },
+    "refit_manifest.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/refit_manifest.json",
+      "sha256": "be6d4fe54f6b6e7ef3d54ef1cabc10f6815c9503c5e5d8081082aad7793cd84c",
+      "bytes": 14379
+    },
+    "refit_plan.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/refit_plan.json",
+      "sha256": "3a6e336c9a905b89bada5094b80218b792c03e7af843031e89d29da487de7373",
+      "bytes": 6865
+    },
+    "refit_records.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/refit_records.json",
+      "sha256": "ce1b90aa95c0b1a75dc0c6fac93aabe7c38f221dd15753ac865886e84c2549ea",
+      "bytes": 724541
+    },
+    "refit_probe.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/refit_probe.json",
+      "sha256": "67de1693d7f344085ddd76b7769660864f6817d4335502d61ee6ee4c17b315f3",
+      "bytes": 15173
+    }
+  },
+  "manifest_checksum": "5512a220ee31d53d0d0bb811483f552b8be1b471ab8ba4e28dc1b8bf33434eac"
+}

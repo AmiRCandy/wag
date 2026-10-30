@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "protocol": "holdout",
+  "rule": "B validation RMSE, then MAE, then model_id",
+  "primary_model_id": "NN_MLP",
+  "ranking": [
+    {
+      "model_id": "NN_MLP",
+      "selection_RMSE": 1.1183018252731365,
+      "selection_MAE": 0.6912502373832932
+    },
+    {
+      "model_id": "LightGBM",
+      "selection_RMSE": 1.5016263267561831,
+      "selection_MAE": 0.9717253313804156
+    },
+    {
+      "model_id": "LightGBM_GUIDED",
+      "selection_RMSE": 1.517339191616667,
+      "selection_MAE": 0.9841303343688768
+    },
+    {
+      "model_id": "XGBoost",
+      "selection_RMSE": 1.5340643665197016,
+      "selection_MAE": 1.0113023378252908
+    },
+    {
+      "model_id": "ExtraTrees",
+      "selection_RMSE": 1.6045208175195447,
+      "selection_MAE": 1.0786850268164392
+    },
+    {
+      "model_id": "XGBoost_GUIDED",
+      "selection_RMSE": 1.6077496042982573,
+      "selection_MAE": 1.0596840543679118
+    },
+    {
+      "model_id": "ExtraTrees_GUIDED",
+      "selection_RMSE": 1.631698596606722,
+      "selection_MAE": 1.09097651847739
+    },
+    {
+      "model_id": "RandomForest",
+      "selection_RMSE": 1.7636978516394533,
+      "selection_MAE": 1.1653117651967797
+    },
+    {
+      "model_id": "RandomForest_GUIDED",
+      "selection_RMSE": 1.7865761480455857,
+      "selection_MAE": 1.1800326918203081
+    },
+    {
+      "model_id": "GradientBoosting_GUIDED",
+      "selection_RMSE": 1.802247778271614,
+      "selection_MAE": 1.2749632070713468
+    },
+    {
+      "model_id": "GradientBoosting",
+      "selection_RMSE": 1.8057907311834946,
+      "selection_MAE": 1.2626922304491486
+    },
+    {
+      "model_id": "NN_PINN_HARD",
+      "selection_RMSE": 2.0612557715688724,
+      "selection_MAE": 1.4850170672299636
+    },
+    {
+      "model_id": "SVR_rbf",
+      "selection_RMSE": 2.582231907668063,
+      "selection_MAE": 1.7788803526325099
+    },
+    {
+      "model_id": "SVR_rbf_GUIDED",
+      "selection_RMSE": 2.592073751394659,
+      "selection_MAE": 1.7819831057832454
+    },
+    {
+      "model_id": "LinearRegression",
+      "selection_RMSE": 3.270426228683967,
+      "selection_MAE": 2.4622516330046915
+    },
+    {
+      "model_id": "Ridge",
+      "selection_RMSE": 3.272495686013786,
+      "selection_MAE": 2.469686250953092
+    },
+    {
+      "model_id": "Lasso",
+      "selection_RMSE": 3.2745928226461984,
+      "selection_MAE": 2.481530393577014
+    },
+    {
+      "model_id": "Ridge_GUIDED",
+      "selection_RMSE": 3.279939587637692,
+      "selection_MAE": 2.4804744554312066
+    },
+    {
+      "model_id": "LinearRegression_GUIDED",
+      "selection_RMSE": 3.280476117374246,
+      "selection_MAE": 2.4794140814176417
+    },
+    {
+      "model_id": "Lasso_GUIDED",
+      "selection_RMSE": 3.281281795031635,
+      "selection_MAE": 2.490320799304425
+    },
+    {
+      "model_id": "ElasticNet_GUIDED",
+      "selection_RMSE": 3.3346574830591833,
+      "selection_MAE": 2.58999497027478
+    },
+    {
+      "model_id": "ElasticNet",
+      "selection_RMSE": 3.352203058932537,
+      "selection_MAE": 2.6082708536667005
+    },
+    {
+      "model_id": "KNN",
+      "selection_RMSE": 3.5663377705591404,
+      "selection_MAE": 2.7389067014629522
+    }
+  ],
+  "excluded_models": [
+    {
+      "model_id": "KNN_GUIDED",
+      "reason": "not validated in every required outer fold",
+      "fold_statuses": [
+        {
+          "fold": 0,
+          "status": "skipped"
+        }
+      ]
+    }
+  ],
+  "winner_scope": "models validated in all required outer folds",
+  "A_outcomes_accessed": false,
+  "models_frozen": false,
+  "interpretation": "B model-selection result, not an unbiased post-selection performance estimate",
+  "refit_plan": {
+    "stage": "pending_Phase_7",
+    "policy": "holdout: reuse development parameters/epochs; nested: tune on all B before final refit"
+  },
+  "task_selection_records": [
+    {
+      "model_id": "LinearRegression",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "3843f4f330950f72a4b146dbbe80532f12c69dbe641855a57da89c171c11a8a5"
+    },
+    {
+      "model_id": "LinearRegression_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "a06191f25bd475d998f2bb7683cbe0cfac7d094e60116a3c15646fcc8e6257d5"
+    },
+    {
+      "model_id": "Ridge",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "21775237f0705a11c009588eb66c27dd77d1f178d178b5752472f5247ce0220d"
+    },
+    {
+      "model_id": "Ridge_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "a40f7fb994ee383c6d39404265405ae53a2b8396f3933118cbfee02c9f1a825b"
+    },
+    {
+      "model_id": "Lasso",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "e91d737cdc556c7f6c7fe4359cdf1dfb9acb45ae14483c8536d7a57bb2c3df70"
+    },
+    {
+      "model_id": "Lasso_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "10c3e97af088505cfd6957889b6b8ea7059b0595cec3a493bf0777d04787eab7"
+    },
+    {
+      "model_id": "ElasticNet",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "3986bd89daff1959c7462e5c13d30584616dcb5e5373ef9bdb075498ed639c21"
+    },
+    {
+      "model_id": "ElasticNet_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "4eb89bb5bba7bf52cfa8b2b638cc8805ca3ccf6f1ffa7769e02cc82a5921f70b"
+    },
+    {
+      "model_id": "KNN",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "7ac9b6c693ea395146f4493616c8367f17dcdbe2a0fb4231a5994e8983caec2d"
+    },
+    {
+      "model_id": "KNN_GUIDED",
+      "fold": 0,
+      "status": "skipped",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "d3f3c46339656c4e0b3088eddf2bc4eeb0fe62e9a5a114f3cd9424341e89d026"
+    },
+    {
+      "model_id": "SVR_rbf",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "ffbb8eaa2e0b096278a121b20c6012412acfc500795257e2939a7f13e357d563"
+    },
+    {
+      "model_id": "SVR_rbf_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {},
+      "selected_epochs": null,
+      "task_id": "483eb8c8a97a76c68ef3f84e846c87b8ab8a67e7aa8ab3be3e77636964b74be8"
+    },
+    {
+      "model_id": "RandomForest",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "n_estimators": 600,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      "selected_epochs": null,
+      "task_id": "2ef594c0e7b0d8c1946e6aef9896313a88139cd444735ab6bd6067255e88ac3e"
+    },
+    {
+      "model_id": "RandomForest_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "n_estimators": 900,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 16
+      },
+      "selected_epochs": null,
+      "task_id": "2092a62a6047f0158a95beefb7c5190a56dc04eeedc9311e4f2eac5c6da7326b"
+    },
+    {
+      "model_id": "ExtraTrees",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "n_estimators": 900,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      "selected_epochs": null,
+      "task_id": "c8073e708d4034529392e5fee1af8a29bfd150ada9985eb45037d2bb8af7a35c"
+    },
+    {
+      "model_id": "ExtraTrees_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "n_estimators": 600,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 16
+      },
+      "selected_epochs": null,
+      "task_id": "30190840e2f421638f2d01b731596775438c93c5c81a7a589809a4b26dabb2dd"
+    },
+    {
+      "model_id": "GradientBoosting",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "subsample": 1.0,
+        "n_estimators": 800,
+        "max_depth": 4,
+        "learning_rate": 0.1
+      },
+      "selected_epochs": null,
+      "task_id": "da1489e9adc7b70671ed4df742c3b15d6edc94706450c73a63a0cd5e582ee058"
+    },
+    {
+      "model_id": "GradientBoosting_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "subsample": 0.8,
+        "n_estimators": 800,
+        "max_depth": 4,
+        "learning_rate": 0.05
+      },
+      "selected_epochs": null,
+      "task_id": "d1346139a659b2c328f147f476befe97a1a2a8d9e4b085d89ded693e4596ea8b"
+    },
+    {
+      "model_id": "XGBoost",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "subsample": 0.8,
+        "n_estimators": 900,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      },
+      "selected_epochs": null,
+      "task_id": "2afdb9c59bf70ea9884b4d71edd8673963080d8d65a4ee9077a8695f091c147d"
+    },
+    {
+      "model_id": "XGBoost_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "subsample": 0.8,
+        "n_estimators": 600,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      },
+      "selected_epochs": null,
+      "task_id": "7641f9a3dd893fcaf547f1212a8cc59cc059a43a657d49a941f40077bcef34ca"
+    },
+    {
+      "model_id": "LightGBM",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "subsample": 0.8,
+        "num_leaves": 63,
+        "n_estimators": 900,
+        "learning_rate": 0.03
+      },
+      "selected_epochs": null,
+      "task_id": "b13120da50d5c5423184292a108ad793b10b0e1fe0bed96fd0d9b327941181af"
+    },
+    {
+      "model_id": "LightGBM_GUIDED",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": {
+        "subsample": 0.8,
+        "num_leaves": 63,
+        "n_estimators": 300,
+        "learning_rate": 0.03
+      },
+      "selected_epochs": null,
+      "task_id": "70f66d9bd8e406d44db849fa516710d9887e5076187bf5d8eb4ab6436b5f895d"
+    },
+    {
+      "model_id": "NN_MLP",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": null,
+      "selected_epochs": 342,
+      "task_id": "6604045e3b424d958566ff2847a58023988ebefd6daebb21450c39919e1fcaf2"
+    },
+    {
+      "model_id": "NN_PINN_HARD",
+      "fold": 0,
+      "status": "validated",
+      "selected_params": null,
+      "selected_epochs": 1000,
+      "task_id": "665cbc99a720263ab9646f1beb7bc520809bbf02b73ded9d566be5aef78c1abf"
+    }
+  ]
+}

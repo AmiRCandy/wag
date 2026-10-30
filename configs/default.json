@@ -1,0 +1,20 @@
+{
+  "train_csv": "data/WAG_simulation_dataset_B_train.csv",
+  "test_csv": "data/WAG_simulation_dataset_A_test.csv",
+  "run_dir": null,
+  "classical_config": "configs/classical.json",
+  "neural_config": "configs/neural.json",
+  "model_scope": "all",
+  "resume": false,
+  "workers": 8,
+  "threads": 1,
+  "device": "cuda:0",
+  "seed": 42,
+  "validation": "holdout",
+  "validation_fraction": 0.2,
+  "inner_folds": 3,
+  "outer_folds": 5,
+  "search": "randomized",
+  "search_candidates": 20,
+  "injection_mode": "volumes"
+}

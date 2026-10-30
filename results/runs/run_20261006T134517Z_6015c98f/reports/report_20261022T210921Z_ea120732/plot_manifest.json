@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "status": "plots_complete",
+  "primary_model_id": "NN_MLP",
+  "training_performed": false,
+  "source_assets": {
+    "figures.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures.py",
+      "sha256": "03c1c65d8409b89d38855843a2b2d8e3808b09b60ef83254b5d50861108c7174",
+      "bytes": 439
+    },
+    "figures/common.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/common.py",
+      "sha256": "50b1a887298140ef02a7f383ebab3a33f913b0c81d3b11bef37ba17d0d8ca2a1",
+      "bytes": 9031
+    },
+    "figures/figure_1.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_1.py",
+      "sha256": "fef5e9c80f5f9e01ea608978d0a89174e2fa703c006cadb6378937da11b2a513",
+      "bytes": 3291
+    },
+    "figures/figure_2.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_2.py",
+      "sha256": "8e6ef2fe8262b94dc0f4e08fe6716696cffad920d5a13408251cf16ec62ed6ed",
+      "bytes": 1737
+    },
+    "figures/figure_3.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_3.py",
+      "sha256": "c6a8c48a721e266355e15efcf7f946bc706cf505e84b434c0d3aa02e4a69fe6c",
+      "bytes": 3619
+    },
+    "figures/figure_4.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_4.py",
+      "sha256": "fc370c8b88712df96808edb953b39f3dab5191ba5c5f3c079159375d3da5bccc",
+      "bytes": 4313
+    },
+    "figures/figure_5.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_5.py",
+      "sha256": "7289c75dce0b57d7a1d1d08191a3a1076d14fb56cd3f5b1b843a35cd81e9654f",
+      "bytes": 2948
+    },
+    "figures/figure_6.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_6.py",
+      "sha256": "6785a7cf54343380966447efb09795207164d3ed839e9fb93443fbdfa8f328d0",
+      "bytes": 745
+    },
+    "figures/figure_7.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_7.py",
+      "sha256": "7da9eca5e8320b9dcb3149902d6eca834ff60edeb77e588407e994794019da06",
+      "bytes": 1671
+    },
+    "figures/figure_8.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_8.py",
+      "sha256": "19edb659417020d2fdbeb2a0f86f2ec33cfd862a201a23647849a9b8b0ccdecc",
+      "bytes": 3344
+    },
+    "figures/figure_9.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/figure_9.py",
+      "sha256": "3ab17585dd5479425dbd97312c7374f2ddc9ce51d6f29ca4de0ea4469d22ab5d",
+      "bytes": 1132
+    },
+    "figures/make_feature_importance.py": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/figures/make_feature_importance.py",
+      "sha256": "5fcc04fa032ae2e794df22cbf349cad5e4693042d8de8dbc7622a7b8e5c06750",
+      "bytes": 2038
+    },
+    "font_files/times.ttf": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/font_files/times.ttf",
+      "sha256": "51966b27ce9d5a3f58bc4890b98bdd08efd9683b9265251ddaf09b8965a849ea",
+      "bytes": 347988
+    }
+  },
+  "figure_set": "manuscript",
+  "plots": [
+    {
+      "figure": 1,
+      "path": "figures/Fig1_data_distributions.png",
+      "caption": "Descriptive distributions of the training (80%) and validation (20%) subsets of Training/Validation, and the Testing dataset; shared bins, probability density (constants explicitly marked), no row filtering. Incremental recovery is in percentage points. Scientific multipliers appear at the top left of the density axis and just beyond the right endpoint of the input/target axis. Panels (a)\u2013(h) follow the labeled input/target order."
+    },
+    {
+      "figure": 2,
+      "path": "figures/Fig2_correlation_heatmaps_training.png",
+      "caption": "Pearson correlation between the inputs and the incremental recovery factor for training data (n=4967). The Training/Validation heatmap includes both subsets. Inputs constant across the entire Training/Validation dataset are omitted from both heatmaps; undefined Testing correlations remain blank. These heatmaps are descriptive after freezing and are not used for model selection.",
+      "dataset_label": "Training/Validation",
+      "n": 4967,
+      "omitted_constant_inputs": []
+    },
+    {
+      "figure": 2,
+      "path": "figures/Fig2_correlation_heatmaps_testing.png",
+      "caption": "Pearson correlation between the inputs and the incremental recovery factor for testing data (n=995). The Training/Validation heatmap includes both subsets. Inputs constant across the entire Training/Validation dataset are omitted from both heatmaps; undefined Testing correlations remain blank. These heatmaps are descriptive after freezing and are not used for model selection.",
+      "dataset_label": "Testing",
+      "n": 995,
+      "omitted_constant_inputs": []
+    },
+    {
+      "figure": 3,
+      "path": "figures/Fig3_model_comparison_training.png",
+      "caption": "Model R\u00b2 scores on the held-out 20% validation subset of Training/Validation. Models are ordered by validation RMSE within Training/Validation, with the same order retained for Testing. Gray denotes standard models; teal denotes guided models. The validation subset participates in selection; Testing is evaluated after freezing.",
+      "dataset_label": "Training/Validation",
+      "model_order": [
+        "NN_MLP",
+        "LightGBM",
+        "LightGBM_GUIDED",
+        "XGBoost",
+        "ExtraTrees",
+        "XGBoost_GUIDED",
+        "ExtraTrees_GUIDED",
+        "RandomForest",
+        "RandomForest_GUIDED",
+        "GradientBoosting_GUIDED",
+        "GradientBoosting",
+        "NN_PINN_HARD",
+        "SVR_rbf",
+        "SVR_rbf_GUIDED",
+        "LinearRegression",
+        "Ridge",
+        "Lasso",
+        "Ridge_GUIDED",
+        "LinearRegression_GUIDED",
+        "Lasso_GUIDED",
+        "ElasticNet_GUIDED",
+        "ElasticNet",
+        "KNN"
+      ]
+    },
+    {
+      "figure": 3,
+      "path": "figures/Fig3_model_comparison_testing.png",
+      "caption": "Model R\u00b2 scores on Testing after refitting on all Training/Validation rows and freezing. Models are ordered by validation RMSE within Training/Validation, with the same order retained for Testing. Gray denotes standard models; teal denotes guided models. The validation subset participates in selection; Testing is evaluated after freezing.",
+      "dataset_label": "Testing",
+      "model_order": [
+        "NN_MLP",
+        "LightGBM",
+        "LightGBM_GUIDED",
+        "XGBoost",
+        "ExtraTrees",
+        "XGBoost_GUIDED",
+        "ExtraTrees_GUIDED",
+        "RandomForest",
+        "RandomForest_GUIDED",
+        "GradientBoosting_GUIDED",
+        "GradientBoosting",
+        "NN_PINN_HARD",
+        "SVR_rbf",
+        "SVR_rbf_GUIDED",
+        "LinearRegression",
+        "Ridge",
+        "Lasso",
+        "Ridge_GUIDED",
+        "LinearRegression_GUIDED",
+        "Lasso_GUIDED",
+        "ElasticNet_GUIDED",
+        "ElasticNet",
+        "KNN"
+      ]
+    },
+    {
+      "figure": 4,
+      "path": "figures/Fig4_guided_model_comparison_training.png",
+      "caption": "Matched standard/guided model R\u00b2 scores on the held-out 20% validation subset of Training/Validation, with their actual saved tuning and epoch budgets (see metrics.csv). Neural architectures and budgets may differ; this is not an isolated causal effect of constraints.",
+      "dataset_label": "Training/Validation",
+      "pairs": [
+        [
+          "LightGBM",
+          "LightGBM_GUIDED",
+          "LightGBM"
+        ],
+        [
+          "XGBoost",
+          "XGBoost_GUIDED",
+          "XGBoost"
+        ],
+        [
+          "ExtraTrees",
+          "ExtraTrees_GUIDED",
+          "ExtraTrees"
+        ],
+        [
+          "RandomForest",
+          "RandomForest_GUIDED",
+          "RandomForest"
+        ],
+        [
+          "GradientBoosting",
+          "GradientBoosting_GUIDED",
+          "GradientBoosting"
+        ],
+        [
+          "SVR_rbf",
+          "SVR_rbf_GUIDED",
+          "SVR_rbf"
+        ],
+        [
+          "LinearRegression",
+          "LinearRegression_GUIDED",
+          "LinearRegression"
+        ],
+        [
+          "Ridge",
+          "Ridge_GUIDED",
+          "Ridge"
+        ],
+        [
+          "Lasso",
+          "Lasso_GUIDED",
+          "Lasso"
+        ],
+        [
+          "ElasticNet",
+          "ElasticNet_GUIDED",
+          "ElasticNet"
+        ],
+        [
+          "NN_MLP",
+          "NN_PINN_HARD",
+          "Neural models"
+        ]
+      ]
+    },
+    {
+      "figure": 4,
+      "path": "figures/Fig4_guided_model_comparison_testing.png",
+      "caption": "Matched standard/guided model R\u00b2 scores on Testing after refitting on all Training/Validation rows and freezing, with their actual saved tuning and epoch budgets (see metrics.csv). Neural architectures and budgets may differ; this is not an isolated causal effect of constraints.",
+      "dataset_label": "Testing",
+      "pairs": [
+        [
+          "LightGBM",
+          "LightGBM_GUIDED",
+          "LightGBM"
+        ],
+        [
+          "XGBoost",
+          "XGBoost_GUIDED",
+          "XGBoost"
+        ],
+        [
+          "ExtraTrees",
+          "ExtraTrees_GUIDED",
+          "ExtraTrees"
+        ],
+        [
+          "RandomForest",
+          "RandomForest_GUIDED",
+          "RandomForest"
+        ],
+        [
+          "GradientBoosting",
+          "GradientBoosting_GUIDED",
+          "GradientBoosting"
+        ],
+        [
+          "SVR_rbf",
+          "SVR_rbf_GUIDED",
+          "SVR_rbf"
+        ],
+        [
+          "LinearRegression",
+          "LinearRegression_GUIDED",
+          "LinearRegression"
+        ],
+        [
+          "Ridge",
+          "Ridge_GUIDED",
+          "Ridge"
+        ],
+        [
+          "Lasso",
+          "Lasso_GUIDED",
+          "Lasso"
+        ],
+        [
+          "ElasticNet",
+          "ElasticNet_GUIDED",
+          "ElasticNet"
+        ],
+        [
+          "NN_MLP",
+          "NN_PINN_HARD",
+          "Neural models"
+        ]
+      ]
+    },
+    {
+      "figure": 5,
+      "path": "figures/Fig5_validation_to_external_errors.png",
+      "caption": "RMSE and MAE for the five leading models selected exclusively by validation ranking. Training/Validation scores use development-fit models; Testing scores use models refitted on the full Training/Validation dataset. Differences combine population and refitting effects. Connecting lines do not represent learning curves or split sensitivity.",
+      "top_models": [
+        "NN_MLP",
+        "LightGBM",
+        "LightGBM_GUIDED",
+        "XGBoost",
+        "ExtraTrees"
+      ]
+    },
+    {
+      "figure": 6,
+      "path": "figures/Fig6_predicted_vs_actual.png",
+      "caption": "Parity of NN_MLP, selected using Training/Validation: held-out validation predictions and Testing predictions from models frozen after fitting on the full Training/Validation dataset. Observations here are simulation outputs.",
+      "model_id": "NN_MLP"
+    },
+    {
+      "figure": 7,
+      "path": "figures/Fig7_residuals.png",
+      "caption": "Residual diagnostics for NN_MLP, selected using Training/Validation; residual = observed minus predicted, in percentage points. The left column shows the validation subset of Training/Validation and the right column shows Testing; residual distributions are above residuals versus predictions.",
+      "model_id": "NN_MLP"
+    },
+    {
+      "figure": 8,
+      "path": "figures/Fig8_feature_importance.png",
+      "caption": "Saved marginal permutation importance of NN_MLP, selected using Training/Validation and computed on its held-out validation subset with the development model. Error bars show standard deviation across permutation repeats, not confidence intervals; correlated predictors limit causal interpretation. Testing is not used for importance.",
+      "model_id": "NN_MLP"
+    },
+    {
+      "figure": 9,
+      "path": "figures/Fig9_external_applicability.png",
+      "caption": "Testing coverage and RMSE for NN_MLP using range/scaling OOD flags saved from Training/Validation. All Testing rows remain in the primary result; these are supplemental descriptive groups. No split sweep, extrapolation clamp or field-validation claim.",
+      "model_id": "NN_MLP",
+      "groups": [
+        {
+          "group": "No OOD flag",
+          "n": 150,
+          "R2": 0.965734639970389,
+          "RMSE": 0.8210999747497179,
+          "MAE": 0.6209109188616275,
+          "bias": -0.05182599539558098
+        },
+        {
+          "group": "Any OOD flag",
+          "n": 845,
+          "R2": 0.9227019426003872,
+          "RMSE": 1.4684284284395346,
+          "MAE": 0.9719809063263899,
+          "bias": -0.022804092249926727
+        }
+      ]
+    }
+  ],
+  "skipped": [],
+  "label_policy": "incremental recovery and errors in percentage points of original oil in place, labeled % OOIP; B-selected primary, saved primary inference",
+  "render_packages": {
+    "matplotlib": "3.10.3",
+    "seaborn": "0.13.2"
+  },
+  "input_fingerprints": {
+    "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/training_manifest.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/training_manifest.json",
+      "sha256": "afec195f45bb4649bc5521f5f8f64549553bd852e7b921f7938d782691de85d6",
+      "bytes": 20168
+    },
+    "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd/evaluation_manifest.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd/evaluation_manifest.json",
+      "sha256": "3b379c56564ec013609a3b2b6e3df2addbe88b22d4e0ebf64b5b4a4daf09e208",
+      "bytes": 4206
+    },
+    "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_B_train.csv": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_B_train.csv",
+      "sha256": "56f11f281d7133dc0d1ef9e92578c901d7740375e68c8bb4be2670e8f2cbbd3f",
+      "bytes": 2829998
+    },
+    "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_A_test.csv": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_A_test.csv",
+      "sha256": "45ced11bd575e47c541996a95bef6b9c66ea818c17a19935a890d25401c29063",
+      "bytes": 567568
+    }
+  },
+  "report_manifest_fingerprint": {
+    "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/report_manifest.json",
+    "sha256": "fafbbcdd2785c8b73b636132109852631bde800e1884ea5d312f14acbe3d2f4f",
+    "bytes": 3033
+  },
+  "figure_1_style": {
+    "axis_label_size": 24.0,
+    "tick_label_size": 16.0,
+    "number_format": "shared scientific multiplier",
+    "panel_labels": "a-h"
+  },
+  "figure_replacements": {
+    "5": "B-validation to A-simulation error comparison; no split sweep",
+    "9": "A OOD coverage/error diagnostics; no split sweep"
+  },
+  "data_counts": {
+    "B_training": 3973,
+    "B_validation": 994,
+    "A_simulation": 995
+  },
+  "artifact_fingerprints": {
+    "figures/Fig1_data_distributions.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig1_data_distributions.png",
+      "sha256": "60ec008a8afa7e16d10232b5d7edc5044eea004cce21f3440a034b95cbe57e9a",
+      "bytes": 1252234
+    },
+    "figures/Fig2_correlation_heatmaps_training.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig2_correlation_heatmaps_training.png",
+      "sha256": "3a32e0ada82255f112a1dcc99bfd83c29b26db990db73a3ec458afeedfc52e3a",
+      "bytes": 1574819
+    },
+    "figures/Fig2_correlation_heatmaps_testing.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig2_correlation_heatmaps_testing.png",
+      "sha256": "180b71a361d6b1405d43d9cac9390c91727efbb196179d6c69f215a1dc744904",
+      "bytes": 1642325
+    },
+    "figures/Fig3_model_comparison_training.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig3_model_comparison_training.png",
+      "sha256": "1ade08fef03af92aafde8dcdf4153c87c4ca48da1966a4bcf8e4238aed6233bf",
+      "bytes": 1189433
+    },
+    "figures/Fig3_model_comparison_testing.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig3_model_comparison_testing.png",
+      "sha256": "2aaddf67d81bd14f3bb52f2ab1b34d31bb1904c43162b6f159ef5299b211f568",
+      "bytes": 1189449
+    },
+    "figures/Fig4_guided_model_comparison_training.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig4_guided_model_comparison_training.png",
+      "sha256": "73c2ad729ff1d1f5daf23e48ac971bd6107d008629c0bc3822f42f4d172c90bf",
+      "bytes": 635294
+    },
+    "figures/Fig4_guided_model_comparison_testing.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig4_guided_model_comparison_testing.png",
+      "sha256": "2029ae5a6f47f6a18532f2630fb130c9226327d6b27f5ffa7c413ed9e6df04b8",
+      "bytes": 635314
+    },
+    "figures/Fig5_validation_to_external_errors.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig5_validation_to_external_errors.png",
+      "sha256": "3fa344e5cfdafeeb4abe3d9f26973619e8e6307a573cdba6015f9d2dbfeb1132",
+      "bytes": 1423654
+    },
+    "figures/Fig6_predicted_vs_actual.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig6_predicted_vs_actual.png",
+      "sha256": "8e42a41ca1bf9cf14b66830ce0ee926da53eca4d6f46d1fc9ad1ba36b1f292d0",
+      "bytes": 3340828
+    },
+    "figures/Fig7_residuals.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig7_residuals.png",
+      "sha256": "cfd7bdc9caa1c66d3e635384a6f871d7991fd0ad0612cc41036565b94fadd529",
+      "bytes": 3609297
+    },
+    "figures/Fig8_feature_importance.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig8_feature_importance.png",
+      "sha256": "50a6b1227c1c3d0e8915bfd58ce1d2a23296d3bf4b2d1752bc1fb8f066280cc9",
+      "bytes": 887268
+    },
+    "figures/Fig9_external_applicability.png": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figures/Fig9_external_applicability.png",
+      "sha256": "af4c337043d632f0dc4d2f9704173c5c1f9e1b56dce9cbece03ad924e463fd7c",
+      "bytes": 616298
+    },
+    "FIGURE_CAPTIONS.md": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/FIGURE_CAPTIONS.md",
+      "sha256": "2e3c1b63c85eae241d624529a946e113a4439ee1eeb8d2edb5a8ab9cf0243bf4",
+      "bytes": 4720
+    },
+    "figure_scores.csv": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figure_scores.csv",
+      "sha256": "fa6783beebfee5397678bbd21bb8d2fff9cf80d61ff0fb397301ac1fc02d8bd4",
+      "bytes": 3924
+    },
+    "figure_9_ood_groups.csv": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/report_20261022T210921Z_ea120732/figure_9_ood_groups.csv",
+      "sha256": "47823b240000bd14064d57d6a97bc444f254dbbb2c4411303bc9bca8af5cb56d",
+      "bytes": 214
+    }
+  }
+}

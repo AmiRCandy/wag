@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article."
+title: "Machine Learning and Physics-Guided Prediction of Incremental Oil Recovery in Simulated Water-Alternating-Gas Injection: code and data"
+type: software
+license: MIT
+authors:
+  - family-names: Tavana
+    given-names: Amirhossein
+    affiliation: "Department of Petroleum Engineering, Hakim Sabzevari University, Sabzevar, Iran"
+  - family-names: Saberi
+    given-names: Hossein
+    affiliation: "Department of Petroleum Engineering, Hakim Sabzevari University, Sabzevar, Iran"
+  - family-names: Esmaeilnezhad
+    given-names: Ehsan
+    affiliation: "Department of Petroleum Engineering, Hakim Sabzevari University, Sabzevar, Iran"
+keywords:
+  - water-alternating-gas
+  - enhanced oil recovery
+  - incremental recovery factor
+  - machine learning
+  - OPM Flow
+  - SPE5

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "status": "evaluation_complete",
+  "phase": "A_external_simulation_test",
+  "created_at_utc": "2026-10-06T13:55:30.208177+00:00",
+  "run_dir": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f",
+  "evaluation_dir": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd",
+  "frozen_fingerprint": {
+    "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/frozen_manifest.json",
+    "sha256": "3474ca80205f9cf68fe15e7727b3a13b3ebf7c255c0ff5328148446deeb4c5b9",
+    "bytes": 105324
+  },
+  "frozen_manifest_checksum": "5512a220ee31d53d0d0bb811483f552b8be1b471ab8ba4e28dc1b8bf33434eac",
+  "primary_model_id": "NN_MLP",
+  "model_ids": [
+    "LinearRegression",
+    "LinearRegression_GUIDED",
+    "Ridge",
+    "Ridge_GUIDED",
+    "Lasso",
+    "Lasso_GUIDED",
+    "ElasticNet",
+    "ElasticNet_GUIDED",
+    "KNN",
+    "SVR_rbf",
+    "SVR_rbf_GUIDED",
+    "RandomForest",
+    "RandomForest_GUIDED",
+    "ExtraTrees",
+    "ExtraTrees_GUIDED",
+    "GradientBoosting",
+    "GradientBoosting_GUIDED",
+    "XGBoost",
+    "XGBoost_GUIDED",
+    "LightGBM",
+    "LightGBM_GUIDED",
+    "NN_MLP",
+    "NN_PINN_HARD"
+  ],
+  "requested_device": "cuda:3",
+  "workers": 8,
+  "threads": 1,
+  "execution": "sequential inference; no fitting worker pool",
+  "model_policy": "all frozen comparisons; B-selected primary unchanged",
+  "training_performed": false,
+  "A_outcomes_accessed": true,
+  "A_path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_A_test.csv",
+  "OOD_policy": {
+    "action": "diagnose_only",
+    "exclude_rows": false,
+    "prediction_clamp": false,
+    "raw_range": "any canonical raw input outside saved training min/max",
+    "standardized_features": "any absolute saved-scaled active feature exceeds threshold",
+    "standardized_threshold": 3.0
+  },
+  "interpretation": "simulated cross-family A test; not observed field validation",
+  "artifact_fingerprints": {
+    "test_predictions.csv": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd/test_predictions.csv",
+      "sha256": "a6b52edaa247a680a67007ed57c593ff368559911df694eba19fda07b8a77e8a",
+      "bytes": 5706040
+    },
+    "test_metrics.csv": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd/test_metrics.csv",
+      "sha256": "1d1d4642c562e5d52a5e017f1ae2c9f528ac7334998e188c57dd776e11782fde",
+      "bytes": 4662
+    },
+    "test_subgroup_metrics.csv": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd/test_subgroup_metrics.csv",
+      "sha256": "fff166afa2097ddf46123cb49ce51ddffbae50bc81d5f03277a8e4d449efd5ec",
+      "bytes": 9801
+    },
+    "coverage_diagnostics.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd/coverage_diagnostics.json",
+      "sha256": "16a2b08e1149cb3409d2a4c81e818934f4f4d56ddcad5128c8641848615f58a8",
+      "bytes": 24992
+    },
+    "test_audit.json": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd/test_audit.json",
+      "sha256": "f1e5b20598deaa2689781d1919216f9e3f0f34dd64612781cb015d197780a428",
+      "bytes": 968
+    }
+  },
+  "rejected_rows": [],
+  "evaluation_source_fingerprint": {
+    "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/evaluation.py",
+    "sha256": "b93601ec174c2cd28d641e92a6cb8821ac18092545d487a25f544059287e01c3",
+    "bytes": 15088
+  },
+  "A_rows": 995,
+  "A_fingerprint": {
+    "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_A_test.csv",
+    "sha256": "45ced11bd575e47c541996a95bef6b9c66ea818c17a19935a890d25401c29063",
+    "bytes": 567568
+  }
+}

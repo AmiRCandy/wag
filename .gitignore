@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Figure font is proprietary and not distributed (see font_files/README.md)
+font_files/*.ttf
+
+# New pipeline runs; the archived manuscript run is kept
+results/runs/*
+!results/runs/run_20261006T134517Z_6015c98f/
+results/evaluations/
+results/reports/
+
+# Simulation working files
+simulation/spe5_wag_runs_v3_*/
+simulation/step1_checkpoint_*.jsonl
+simulation/WAG_simulation_dataset_*.csv

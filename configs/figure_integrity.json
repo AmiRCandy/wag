@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "source_commit": "519328c32d45efd327aecf75b05c1e6e375f92e0",
+  "git_blob_hashes": {
+    "figures.py": "68f077e780dd9ac0c5f164debfd7396b627d1acb",
+    "figures/common.py": "af9678a378604824d5995e0dca7ac24a004b20c6",
+    "figures/figure_1.py": "fbf7b4a19fbfb45879f790e110cd9a2ec509f0b4",
+    "figures/figure_2.py": "97e38f55ac560f0d12cf5392f2f8bc57698c4116",
+    "figures/figure_3.py": "1d5bc1efe72429a9dec81c9323fecbfe01a22b1e",
+    "figures/figure_4.py": "6657a382cfb8db3a71e8be42c6a0e42961966762",
+    "figures/figure_5.py": "1356e82e8a698631585227ba277e5a76386a1797",
+    "figures/figure_6.py": "eb1d6a3bc62c54da742fed161c1bca044901a57c",
+    "figures/figure_7.py": "bbf5fc93c2bf9c10aba80a92a5482c79434a9058",
+    "figures/figure_8.py": "7cd0b2970fbfd048df5feaad4ee73e2e6ef6984f",
+    "figures/figure_9.py": "77f839f15a40a57604e9190eb3195e1d3150aeaa",
+    "figures/make_feature_importance.py": "f2f49ed1659d387427deafdca63ab6fd3d635a65",
+    "font_files/times.ttf": "51261a005cd5b17755274fd7d2bdde4edd01bf1c"
+  }
+}

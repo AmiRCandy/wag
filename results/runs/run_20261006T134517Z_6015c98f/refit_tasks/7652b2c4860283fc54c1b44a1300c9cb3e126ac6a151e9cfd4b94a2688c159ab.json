@@ -1,0 +1,91 @@
+{
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "record": {
+    "model_id": "ElasticNet",
+    "kind": "classical",
+    "status": "saved",
+    "attempts": 1,
+    "plan": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "3986bd89daff1959c7462e5c13d30584616dcb5e5373ef9bdb075498ed639c21"
+    },
+    "fallback_performed": false,
+    "fit": {
+      "model_id": "ElasticNet",
+      "status": "fitted",
+      "seed": 2036539513,
+      "phase": "final_all_B",
+      "fold": 0,
+      "best_params": {},
+      "warnings": [],
+      "native_threads": 1,
+      "inner_cv_rmse": null,
+      "search_performed": false,
+      "fallback_performed": false
+    },
+    "entry": {
+      "model_id": "ElasticNet",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.joblib",
+        "metadata": "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.joblib",
+          "sha256": "7e4c072ba3b2d86d686eda1833b539d5b268f17c6a6544c7c2fc3de46fd3dc6f",
+          "bytes": 2484
+        },
+        "final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/06ce2cfd04ceff1bd233409edb3b28a987bb5f8ad15d5ed4d2dd55ff1b795595.metadata.json",
+          "sha256": "eba6e8e370c75d146497354368b9b3772805a468141a6871152d8a413c2cca88",
+          "bytes": 9502
+        }
+      },
+      "configuration_hash": "5da76d218502c16d80aae258ca6284956d1b5e05d35e2b3c1b8fa17eecb1b9a3",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.25547180152645454,
+          5.531474512493771,
+          4.755138482850117,
+          2.0665120813432742,
+          -2.439313300733718,
+          4.130561789080436,
+          6.839583265813731,
+          1.6998925437849852,
+          13.790245189206978,
+          4.283507331625009,
+          3.5966846199601505,
+          2.9990703751895023,
+          10.245396270036462,
+          2.4211336354182986,
+          4.265015230335929,
+          3.019454180305566
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    }
+  },
+  "checksum": "87ffb4c6cf4397c54c8e7380546d636f309a637021c19e0b65bfb430b43e56e6"
+}

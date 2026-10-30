@@ -1,0 +1,24 @@
+model_id,display_label,legacy_model
+NN_MLP,NN_MLP (342 epochs),NN_MLP(342)
+LightGBM,LightGBM,LightGBM
+LightGBM_GUIDED,LightGBM (physics-guided),LightGBM_PHYS
+XGBoost,XGBoost,XGBoost
+ExtraTrees,ExtraTrees,ExtraTrees
+XGBoost_GUIDED,XGBoost (physics-guided),XGBoost_PHYS
+ExtraTrees_GUIDED,ExtraTrees (physics-guided),ExtraTrees_PHYS
+RandomForest,RandomForest,RandomForest
+RandomForest_GUIDED,RandomForest (physics-guided),RandomForest_PHYS
+GradientBoosting_GUIDED,GradientBoosting (physics-guided),GradientBoosting_PHYS
+GradientBoosting,GradientBoosting,GradientBoosting
+NN_PINN_HARD,NN_PINN_HARD (1000 epochs),NN_PINN_HARD(1000)
+SVR_rbf,SVR_rbf,SVR_rbf
+SVR_rbf_GUIDED,SVR_rbf (physics-guided),SVR_rbf_PHYS
+LinearRegression,LinearRegression,LinearRegression
+Ridge,Ridge,Ridge
+Lasso,Lasso,Lasso
+Ridge_GUIDED,Ridge (physics-guided),Ridge_PHYS
+LinearRegression_GUIDED,LinearRegression (physics-guided),LinearRegression_PHYS
+Lasso_GUIDED,Lasso (physics-guided),Lasso_PHYS
+ElasticNet_GUIDED,ElasticNet (physics-guided),ElasticNet_PHYS
+ElasticNet,ElasticNet,ElasticNet
+KNN,KNN,KNN

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "enabled_models": ["LinearRegression", "Ridge", "Lasso", "ElasticNet", "KNN", "SVR_rbf", "RandomForest", "ExtraTrees", "GradientBoosting", "XGBoost", "LightGBM"],
+  "missing_model_policy": "error",
+  "variants": ["plain", "guided"],
+  "guided": {"anchor_count": 120, "anchor_weight": 0.3, "gas_monotonicity": true, "bounds": [-100.0, 100.0]},
+  "models": {
+    "LinearRegression": {"defaults": {}, "search": {}},
+    "Ridge": {"defaults": {"alpha": 1.0}, "search": {}},
+    "Lasso": {"defaults": {"alpha": 0.01, "max_iter": 8000}, "search": {}},
+    "ElasticNet": {"defaults": {"alpha": 0.01, "max_iter": 8000}, "search": {}},
+    "KNN": {"defaults": {"n_neighbors": 7}, "search": {}},
+    "SVR_rbf": {"defaults": {"C": 20.0, "gamma": "scale", "kernel": "rbf"}, "search": {}},
+    "RandomForest": {"defaults": {"n_estimators": 500}, "search": {"n_estimators": [300, 600, 900], "max_depth": [null, 8, 16], "min_samples_leaf": [1, 2, 4], "max_features": ["sqrt", 1.0, 0.5]}},
+    "ExtraTrees": {"defaults": {"n_estimators": 500}, "search": {"n_estimators": [300, 600, 900], "max_depth": [null, 8, 16], "min_samples_leaf": [1, 2, 4], "max_features": ["sqrt", 1.0, 0.5]}},
+    "GradientBoosting": {"defaults": {}, "search": {"n_estimators": [200, 400, 800], "max_depth": [2, 3, 4], "learning_rate": [0.03, 0.05, 0.1], "subsample": [0.8, 1.0]}},
+    "XGBoost": {"defaults": {"n_estimators": 600, "max_depth": 4, "learning_rate": 0.05, "subsample": 0.9, "colsample_bytree": 0.9}, "search": {"n_estimators": [300, 600, 900], "max_depth": [3, 4, 6], "learning_rate": [0.03, 0.05, 0.1], "subsample": [0.8, 1.0], "colsample_bytree": [0.8, 1.0]}},
+    "LightGBM": {"defaults": {"n_estimators": 600, "learning_rate": 0.05, "subsample": 0.9, "colsample_bytree": 0.9, "subsample_freq": 1}, "search": {"n_estimators": [300, 600, 900], "num_leaves": [15, 31, 63], "learning_rate": [0.03, 0.05, 0.1], "subsample": [0.8, 1.0]}}
+  }
+}

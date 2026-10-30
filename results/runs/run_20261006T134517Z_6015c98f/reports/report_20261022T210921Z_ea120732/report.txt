@@ -1,0 +1,979 @@
+WAG experiment report
+Primary model selected using Training/Validation: NN_MLP
+Selection rule: Training/Validation validation RMSE, then MAE, then model_id
+Training/Validation rows: 4967; protocol: holdout
+The validation subset of Training/Validation is used for model selection; it is not an unbiased post-selection performance estimate.
+Incremental recovery is WAG minus waterflood, in percentage points of initial oil in place.
+Residual = observed - predicted; bias = mean(predicted - observed).
+Training/Validation metrics (validation predictions):
+               model_id                                   phase  fold   n       R2     RMSE      MAE      bias  mean_outer_RMSE  std_outer_RMSE  mean_outer_MAE  std_outer_MAE  mean_outer_R2  std_outer_R2  mean_outer_bias  std_outer_bias
+       LinearRegression Training/Validation (validation)_pooled   NaN 994 0.604847 3.270426 2.462252  0.025267         3.270426             0.0        2.462252            0.0       0.604847           0.0         0.025267             0.0
+LinearRegression_GUIDED Training/Validation (validation)_pooled   NaN 994 0.602414 3.280476 2.479414  0.036801         3.280476             0.0        2.479414            0.0       0.602414           0.0         0.036801             0.0
+                  Ridge Training/Validation (validation)_pooled   NaN 994 0.604347 3.272496 2.469686  0.024669         3.272496             0.0        2.469686            0.0       0.604347           0.0         0.024669             0.0
+           Ridge_GUIDED Training/Validation (validation)_pooled   NaN 994 0.602545 3.279940 2.480474  0.029548         3.279940             0.0        2.480474            0.0       0.602545           0.0         0.029548             0.0
+                  Lasso Training/Validation (validation)_pooled   NaN 994 0.603839 3.274593 2.481530  0.029866         3.274593             0.0        2.481530            0.0       0.603839           0.0         0.029866             0.0
+           Lasso_GUIDED Training/Validation (validation)_pooled   NaN 994 0.602219 3.281282 2.490321  0.031754         3.281282             0.0        2.490321            0.0       0.602219           0.0         0.031754             0.0
+             ElasticNet Training/Validation (validation)_pooled   NaN 994 0.584838 3.352203 2.608271  0.018174         3.352203             0.0        2.608271            0.0       0.584838           0.0         0.018174             0.0
+      ElasticNet_GUIDED Training/Validation (validation)_pooled   NaN 994 0.589173 3.334657 2.589995 -0.007758         3.334657             0.0        2.589995            0.0       0.589173           0.0        -0.007758             0.0
+                    KNN Training/Validation (validation)_pooled   NaN 994 0.530104 3.566338 2.738907 -0.143435         3.566338             0.0        2.738907            0.0       0.530104           0.0        -0.143435             0.0
+                SVR_rbf Training/Validation (validation)_pooled   NaN 994 0.753653 2.582232 1.778880  0.274307         2.582232             0.0        1.778880            0.0       0.753653           0.0         0.274307             0.0
+         SVR_rbf_GUIDED Training/Validation (validation)_pooled   NaN 994 0.751772 2.592074 1.781983  0.292793         2.592074             0.0        1.781983            0.0       0.751772           0.0         0.292793             0.0
+           RandomForest Training/Validation (validation)_pooled   NaN 994 0.885077 1.763698 1.165312 -0.008763         1.763698             0.0        1.165312            0.0       0.885077           0.0        -0.008763             0.0
+    RandomForest_GUIDED Training/Validation (validation)_pooled   NaN 994 0.882077 1.786576 1.180033 -0.005372         1.786576             0.0        1.180033            0.0       0.882077           0.0        -0.005372             0.0
+             ExtraTrees Training/Validation (validation)_pooled   NaN 994 0.904885 1.604521 1.078685 -0.035313         1.604521             0.0        1.078685            0.0       0.904885           0.0        -0.035313             0.0
+      ExtraTrees_GUIDED Training/Validation (validation)_pooled   NaN 994 0.901636 1.631699 1.090977 -0.025105         1.631699             0.0        1.090977            0.0       0.901636           0.0        -0.025105             0.0
+       GradientBoosting Training/Validation (validation)_pooled   NaN 994 0.879526 1.805791 1.262692  0.020901         1.805791             0.0        1.262692            0.0       0.879526           0.0         0.020901             0.0
+GradientBoosting_GUIDED Training/Validation (validation)_pooled   NaN 994 0.879999 1.802248 1.274963  0.014722         1.802248             0.0        1.274963            0.0       0.879999           0.0         0.014722             0.0
+                XGBoost Training/Validation (validation)_pooled   NaN 994 0.913055 1.534064 1.011302  0.025157         1.534064             0.0        1.011302            0.0       0.913055           0.0         0.025157             0.0
+         XGBoost_GUIDED Training/Validation (validation)_pooled   NaN 994 0.904502 1.607750 1.059684  0.027270         1.607750             0.0        1.059684            0.0       0.904502           0.0         0.027270             0.0
+               LightGBM Training/Validation (validation)_pooled   NaN 994 0.916693 1.501626 0.971725  0.022012         1.501626             0.0        0.971725            0.0       0.916693           0.0         0.022012             0.0
+        LightGBM_GUIDED Training/Validation (validation)_pooled   NaN 994 0.914941 1.517339 0.984130  0.020941         1.517339             0.0        0.984130            0.0       0.914941           0.0         0.020941             0.0
+                 NN_MLP Training/Validation (validation)_pooled   NaN 994 0.953797 1.118302 0.691250  0.014707         1.118302             0.0        0.691250            0.0       0.953797           0.0         0.014707             0.0
+           NN_PINN_HARD Training/Validation (validation)_pooled   NaN 994 0.843029 2.061256 1.485017 -0.002354         2.061256             0.0        1.485017            0.0       0.843029           0.0        -0.002354             0.0
+Final refit: 4967 Training/Validation rows; frozen models: LinearRegression, LinearRegression_GUIDED, Ridge, Ridge_GUIDED, Lasso, Lasso_GUIDED, ElasticNet, ElasticNet_GUIDED, KNN, SVR_rbf, SVR_rbf_GUIDED, RandomForest, RandomForest_GUIDED, ExtraTrees, ExtraTrees_GUIDED, GradientBoosting, GradientBoosting_GUIDED, XGBoost, XGBoost_GUIDED, LightGBM, LightGBM_GUIDED, NN_MLP, NN_PINN_HARD.
+Final fitting is a separate stage; training predictions are not validation scores.
+Testing metrics:
+               model_id        phase  is_B_selected_primary  output subgroup   n       R2     RMSE      MAE      bias
+       LinearRegression Testing_test                  False primary      all 995 0.558427 3.431590 2.627364 -0.425572
+LinearRegression_GUIDED Testing_test                  False primary      all 995 0.561492 3.419659 2.636007 -0.409346
+LinearRegression_GUIDED Testing_test                  False     raw      all 995 0.561492 3.419659 2.636007 -0.409346
+                  Ridge Testing_test                  False primary      all 995 0.559561 3.427180 2.630609 -0.422032
+           Ridge_GUIDED Testing_test                  False primary      all 995 0.562258 3.416670 2.633252 -0.384844
+           Ridge_GUIDED Testing_test                  False     raw      all 995 0.562258 3.416670 2.633252 -0.384844
+                  Lasso Testing_test                  False primary      all 995 0.562125 3.417188 2.631290 -0.370253
+           Lasso_GUIDED Testing_test                  False primary      all 995 0.562625 3.415237 2.635172 -0.342726
+           Lasso_GUIDED Testing_test                  False     raw      all 995 0.562625 3.415237 2.635172 -0.342726
+             ElasticNet Testing_test                  False primary      all 995 0.545927 3.479819 2.736258 -0.367773
+      ElasticNet_GUIDED Testing_test                  False primary      all 995 0.552446 3.454750 2.715913 -0.363711
+      ElasticNet_GUIDED Testing_test                  False     raw      all 995 0.552446 3.454750 2.715913 -0.363711
+                    KNN Testing_test                  False primary      all 995 0.485346 3.704691 2.890207 -0.356883
+                SVR_rbf Testing_test                  False primary      all 995 0.688520 2.882103 2.039304  0.339472
+         SVR_rbf_GUIDED Testing_test                  False primary      all 995 0.687507 2.886784 2.026299  0.402534
+         SVR_rbf_GUIDED Testing_test                  False     raw      all 995 0.687507 2.886784 2.026299  0.402534
+           RandomForest Testing_test                  False primary      all 995 0.886090 1.742909 1.209940 -0.167674
+    RandomForest_GUIDED Testing_test                  False primary      all 995 0.884592 1.754333 1.215049 -0.158007
+    RandomForest_GUIDED Testing_test                  False     raw      all 995 0.884592 1.754333 1.215049 -0.158007
+             ExtraTrees Testing_test                  False primary      all 995 0.891832 1.698412 1.172941 -0.188262
+      ExtraTrees_GUIDED Testing_test                  False primary      all 995 0.887718 1.730411 1.188041 -0.181939
+      ExtraTrees_GUIDED Testing_test                  False     raw      all 995 0.887718 1.730411 1.188041 -0.181939
+       GradientBoosting Testing_test                  False primary      all 995 0.834283 2.102215 1.521819  0.024719
+GradientBoosting_GUIDED Testing_test                  False primary      all 995 0.834790 2.099002 1.505810 -0.080969
+GradientBoosting_GUIDED Testing_test                  False     raw      all 995 0.834790 2.099002 1.505810 -0.080969
+                XGBoost Testing_test                  False primary      all 995 0.889451 1.717001 1.173594 -0.018950
+         XGBoost_GUIDED Testing_test                  False primary      all 995 0.883808 1.760282 1.187157 -0.070241
+         XGBoost_GUIDED Testing_test                  False     raw      all 995 0.883808 1.760282 1.187157 -0.070241
+               LightGBM Testing_test                  False primary      all 995 0.901340 1.622050 1.092226 -0.032776
+        LightGBM_GUIDED Testing_test                  False primary      all 995 0.893120 1.688269 1.112686 -0.012439
+        LightGBM_GUIDED Testing_test                  False     raw      all 995 0.893120 1.688269 1.112686 -0.012439
+                 NN_MLP Testing_test                   True primary      all 995 0.927521 1.390271 0.919056 -0.027179
+           NN_PINN_HARD Testing_test                  False primary      all 995 0.828921 2.135956 1.561367 -0.248759
+Testing uses simulated data, not observed field validation. The primary selected using Training/Validation stays unchanged.
+Coverage diagnoses marginal departures from Training/Validation ranges and scaling; no row exclusion or joint-support guarantee.
+{
+  "policy": {
+    "action": "diagnose_only",
+    "exclude_rows": false,
+    "prediction_clamp": false,
+    "raw_range": "any canonical raw input outside saved training min/max",
+    "standardized_features": "any absolute saved-scaled active feature exceeds threshold",
+    "standardized_threshold": 3.0
+  },
+  "models": {
+    "LinearRegression": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "LinearRegression_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "Ridge": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "Ridge_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "Lasso": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "Lasso_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "ElasticNet": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "ElasticNet_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "KNN": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "SVR_rbf": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "SVR_rbf_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "RandomForest": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "RandomForest_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "ExtraTrees": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "ExtraTrees_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "GradientBoosting": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "GradientBoosting_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "XGBoost": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "XGBoost_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "LightGBM": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "LightGBM_GUIDED": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "NN_MLP": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    },
+    "NN_PINN_HARD": {
+      "n": 995,
+      "raw_range_rows": 830,
+      "scaled_rows": 313,
+      "any_flag_rows": 845,
+      "raw_range_feature_counts": {
+        "effective_perm_md": 0,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 498,
+        "oil_visc_mult": 642,
+        "hcpvi_gas_frac": 1,
+        "wag_ratio_resvol": 1
+      },
+      "scaled_feature_counts": {
+        "effective_perm_md": 25,
+        "porosity_frac": 0,
+        "init_pressure_psi": 0,
+        "depth_ft": 0,
+        "prod_orat_stb": 0,
+        "wag_halfcycle_mo": 0,
+        "waterflood_years": 0,
+        "perm_contrast_exp": 134,
+        "oil_visc_mult": 142,
+        "hcpvi_gas_frac": 22,
+        "wag_ratio_resvol": 21,
+        "log10_perm": 0,
+        "perm_times_porosity": 23,
+        "pressure_per_depth": 0,
+        "pressure_over_mmp": 0,
+        "log1p_hcpvi_gas_frac": 13,
+        "log1p_wag_ratio_resvol": 14
+      }
+    }
+  }
+}
+Importance uses held-out validation predictions from each development-fit model; five permutations per raw feature.
+Dependencies are recomputed. Correlated features limit causal interpretation; negative importance is retained.
+Importance mean/std summarize fold/permutation repeats, not confidence intervals or causal effects.
+feature_importance.csv is compatible R2 decrease; feature_importance_rmse.csv is RMSE increase in percentage points.
+No bootstrap intervals, PDE-residual guarantee or observed-field accuracy is claimed.
+Skipped/unavailable:
+Legacy split-sensitivity Figures 5/9: unavailable; the opt-in manuscript set substitutes Training/Validation and Testing errors and Testing applicability diagnostics
+Raw-data Figures 1/2 require plots --figure-set manuscript and the original fingerprint-bound CSVs
+Figure 3/CV export: holdout validation is not cross-validation
+Excluded comparisons:
+[
+  {
+    "model_id": "KNN_GUIDED",
+    "reason": "not validated in every required outer fold",
+    "fold_statuses": [
+      {
+        "fold": 0,
+        "status": "skipped"
+      }
+    ]
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "record": {
+    "model_id": "LightGBM_GUIDED",
+    "kind": "classical",
+    "status": "saved",
+    "attempts": 1,
+    "plan": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "subsample": 0.8,
+        "num_leaves": 63,
+        "n_estimators": 300,
+        "learning_rate": 0.03
+      },
+      "selection_task_id": "70f66d9bd8e406d44db849fa516710d9887e5076187bf5d8eb4ab6436b5f895d"
+    },
+    "fallback_performed": false,
+    "fit": {
+      "model_id": "LightGBM_GUIDED",
+      "status": "fitted",
+      "seed": 1023594057,
+      "phase": "final_all_B",
+      "fold": 0,
+      "best_params": {
+        "subsample": 0.8,
+        "num_leaves": 63,
+        "n_estimators": 300,
+        "learning_rate": 0.03
+      },
+      "warnings": [],
+      "native_threads": 1,
+      "inner_cv_rmse": null,
+      "search_performed": false,
+      "fallback_performed": false,
+      "guidance": {
+        "real_rows": 4967,
+        "anchor_rows": 120,
+        "anchor_weight": 0.3,
+        "weighting_applied": true,
+        "gas_monotonicity_hypothesis": true,
+        "permeability_monotonicity": false,
+        "bounds": [
+          -100.0,
+          100.0
+        ],
+        "preprocessing_fit_rows": 4967,
+        "seed": 1023594057
+      }
+    },
+    "entry": {
+      "model_id": "LightGBM_GUIDED",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.joblib",
+        "metadata": "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.joblib",
+          "sha256": "25f0d14f197adb0afc220b434e66d763ee3bd7f513c077cd3d70e836814df6cc",
+          "bytes": 768881
+        },
+        "final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/caebd98382b41851e66f21ac30f6a263962de0371b10d41c9f7ca1e7f6e43d0a.metadata.json",
+          "sha256": "bb1349f6206070160bc60a1bf7d86c3cc738cd9d6ca563a9254504049aa9570a",
+          "bytes": 10338
+        }
+      },
+      "configuration_hash": "227b34dec414bafa9423cd862dcc886e32ccb8d72d250e4352d2a8cb36416184",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.7964004295396797,
+          9.572841804155615,
+          6.287357443124577,
+          2.42046604234374,
+          1.5299285086945695,
+          6.078927478380706,
+          8.300943536192715,
+          -3.0215390695637283,
+          14.976141787264055,
+          4.1903038768159275,
+          1.9203203572009284,
+          4.217684824793602,
+          8.195968844921788,
+          1.4945154883145126,
+          6.185407515432055,
+          -3.7912288875813807
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001,
+        "raw_prediction": [
+          0.7964004295396797,
+          9.572841804155615,
+          6.287357443124577,
+          2.42046604234374,
+          1.5299285086945695,
+          6.078927478380706,
+          8.300943536192715,
+          -3.0215390695637283,
+          14.976141787264055,
+          4.1903038768159275,
+          1.9203203572009284,
+          4.217684824793602,
+          8.195968844921788,
+          1.4945154883145126,
+          6.185407515432055,
+          -3.7912288875813807
+        ]
+      }
+    }
+  },
+  "checksum": "2a7e2711b71353b0c449fa749312a64fdfe5c14383b39309cd5369c0b2581fc3"
+}

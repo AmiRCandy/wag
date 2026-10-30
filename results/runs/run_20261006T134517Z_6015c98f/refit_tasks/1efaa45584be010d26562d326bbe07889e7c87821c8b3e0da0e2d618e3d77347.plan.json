@@ -1,0 +1,10 @@
+{
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "plan": {
+    "status": "selected",
+    "source": "holdout_B_inner_epoch_selection",
+    "selected_epochs": 1000,
+    "selection_task_id": "665cbc99a720263ab9646f1beb7bc520809bbf02b73ded9d566be5aef78c1abf"
+  },
+  "checksum": "ac77be2120b60b7285ed2f86e13a9b2328a778f23c3bf9a69ab1eb286e8d4dd6"
+}

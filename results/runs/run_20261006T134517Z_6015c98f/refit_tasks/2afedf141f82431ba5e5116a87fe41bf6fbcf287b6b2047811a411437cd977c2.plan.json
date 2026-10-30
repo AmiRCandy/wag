@@ -1,0 +1,15 @@
+{
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "plan": {
+    "status": "selected",
+    "source": "holdout_development_selection",
+    "selected_params": {
+      "n_estimators": 900,
+      "min_samples_leaf": 2,
+      "max_features": 1.0,
+      "max_depth": 16
+    },
+    "selection_task_id": "2092a62a6047f0158a95beefb7c5190a56dc04eeedc9311e4f2eac5c6da7326b"
+  },
+  "checksum": "3a47a6c89c4d9335972fbe4ff19fc77f41e0e435faed037889a510a29557077b"
+}

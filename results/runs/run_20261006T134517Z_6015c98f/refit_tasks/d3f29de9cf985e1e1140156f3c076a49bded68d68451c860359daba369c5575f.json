@@ -1,0 +1,101 @@
+{
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "record": {
+    "model_id": "RandomForest",
+    "kind": "classical",
+    "status": "saved",
+    "attempts": 1,
+    "plan": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "n_estimators": 600,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      "selection_task_id": "2ef594c0e7b0d8c1946e6aef9896313a88139cd444735ab6bd6067255e88ac3e"
+    },
+    "fallback_performed": false,
+    "fit": {
+      "model_id": "RandomForest",
+      "status": "fitted",
+      "seed": 1576108803,
+      "phase": "final_all_B",
+      "fold": 0,
+      "best_params": {
+        "n_estimators": 600,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      "warnings": [],
+      "native_threads": 1,
+      "inner_cv_rmse": null,
+      "search_performed": false,
+      "fallback_performed": false
+    },
+    "entry": {
+      "model_id": "RandomForest",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.joblib",
+        "metadata": "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.joblib",
+          "sha256": "912d601ca2900cd6d85688094f43640882907fe68a8da6593a88e573f8175633",
+          "bytes": 36721308
+        },
+        "final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/18d8b3a5c1df37daffc96c7706e9612b78a6edb73ce05e36173d0cfa2f6bcd3d.metadata.json",
+          "sha256": "7231f89c8336a1aa5f2c129d64ffb1524da0bbdb1a1e5e2c035901427419ae05",
+          "bytes": 9714
+        }
+      },
+      "configuration_hash": "699c80e960558714135579350adcd5db8455efaec08b51f3e3e6f1ce698351d0",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          0.901229317030579,
+          9.23101551709604,
+          5.749830276605882,
+          3.1665866029453182,
+          1.5137478493571916,
+          5.54245937748939,
+          8.319010823416333,
+          -3.1552063238746926,
+          14.196265385181183,
+          4.005065285125793,
+          2.1157673804419392,
+          4.227112817388362,
+          7.76407494339363,
+          1.4015715392074257,
+          5.848678473558374,
+          -3.242129281727152
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    }
+  },
+  "checksum": "5386005d8180ab2ff13128d2357de838148a87a92af48561728e2e827424e842"
+}

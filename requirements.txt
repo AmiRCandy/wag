@@ -1,0 +1,15 @@
+# Versions recorded for the manuscript run (results/runs/run_20261006T134517Z_6015c98f/training_manifest.json)
+# Python 3.10.21; PyTorch 2.10.0 with CUDA 12.8 on an NVIDIA L40S GPU.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.6.0
+threadpoolctl==3.7.0
+tqdm==4.67.1
+xgboost==3.2.0
+lightgbm==4.7.0
+torch==2.10.0
+matplotlib==3.10.3
+seaborn==0.13.2
+pytest

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "role": "A_external_simulation_test",
+  "rows": 995,
+  "fingerprint": {
+    "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_A_test.csv",
+    "sha256": "45ced11bd575e47c541996a95bef6b9c66ea818c17a19935a890d25401c29063",
+    "bytes": 567568
+  },
+  "extra_columns_ignored": [],
+  "excluded_rows": [],
+  "negative_targets_retained": 207,
+  "zero_targets_retained": 0,
+  "identity_max_absolute_errors": {
+    "incremental_equals_wag_minus_waterflood": 1.4210854715202004e-14,
+    "porosity_pct_equals_fraction_times_100": 1.4210854715202004e-14,
+    "effective_perm_equals_perm_mult_times_250": 2.2737367544323206e-13
+  },
+  "row_id_policy": "A:sha256(schema_version,ordered_design_columns,normalized_coordinates)",
+  "notes": [
+    "Simulated cross-family test; not observed field validation",
+    "Integrity does not establish convergence or statistical independence"
+  ],
+  "exact_design_overlap_with_B": 0
+}

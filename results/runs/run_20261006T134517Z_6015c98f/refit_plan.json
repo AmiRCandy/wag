@@ -1,0 +1,201 @@
+{
+  "protocol": "holdout",
+  "plans": {
+    "LinearRegression": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "3843f4f330950f72a4b146dbbe80532f12c69dbe641855a57da89c171c11a8a5"
+    },
+    "LinearRegression_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "a06191f25bd475d998f2bb7683cbe0cfac7d094e60116a3c15646fcc8e6257d5"
+    },
+    "Ridge": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "21775237f0705a11c009588eb66c27dd77d1f178d178b5752472f5247ce0220d"
+    },
+    "Ridge_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "a40f7fb994ee383c6d39404265405ae53a2b8396f3933118cbfee02c9f1a825b"
+    },
+    "Lasso": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "e91d737cdc556c7f6c7fe4359cdf1dfb9acb45ae14483c8536d7a57bb2c3df70"
+    },
+    "Lasso_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "10c3e97af088505cfd6957889b6b8ea7059b0595cec3a493bf0777d04787eab7"
+    },
+    "ElasticNet": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "3986bd89daff1959c7462e5c13d30584616dcb5e5373ef9bdb075498ed639c21"
+    },
+    "ElasticNet_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "4eb89bb5bba7bf52cfa8b2b638cc8805ca3ccf6f1ffa7769e02cc82a5921f70b"
+    },
+    "KNN": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "7ac9b6c693ea395146f4493616c8367f17dcdbe2a0fb4231a5994e8983caec2d"
+    },
+    "SVR_rbf": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "ffbb8eaa2e0b096278a121b20c6012412acfc500795257e2939a7f13e357d563"
+    },
+    "SVR_rbf_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "483eb8c8a97a76c68ef3f84e846c87b8ab8a67e7aa8ab3be3e77636964b74be8"
+    },
+    "RandomForest": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "n_estimators": 600,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      "selection_task_id": "2ef594c0e7b0d8c1946e6aef9896313a88139cd444735ab6bd6067255e88ac3e"
+    },
+    "RandomForest_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "n_estimators": 900,
+        "min_samples_leaf": 2,
+        "max_features": 1.0,
+        "max_depth": 16
+      },
+      "selection_task_id": "2092a62a6047f0158a95beefb7c5190a56dc04eeedc9311e4f2eac5c6da7326b"
+    },
+    "ExtraTrees": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "n_estimators": 900,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": null
+      },
+      "selection_task_id": "c8073e708d4034529392e5fee1af8a29bfd150ada9985eb45037d2bb8af7a35c"
+    },
+    "ExtraTrees_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "n_estimators": 600,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 16
+      },
+      "selection_task_id": "30190840e2f421638f2d01b731596775438c93c5c81a7a589809a4b26dabb2dd"
+    },
+    "GradientBoosting": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "subsample": 1.0,
+        "n_estimators": 800,
+        "max_depth": 4,
+        "learning_rate": 0.1
+      },
+      "selection_task_id": "da1489e9adc7b70671ed4df742c3b15d6edc94706450c73a63a0cd5e582ee058"
+    },
+    "GradientBoosting_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "subsample": 0.8,
+        "n_estimators": 800,
+        "max_depth": 4,
+        "learning_rate": 0.05
+      },
+      "selection_task_id": "d1346139a659b2c328f147f476befe97a1a2a8d9e4b085d89ded693e4596ea8b"
+    },
+    "XGBoost": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "subsample": 0.8,
+        "n_estimators": 900,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      },
+      "selection_task_id": "2afdb9c59bf70ea9884b4d71edd8673963080d8d65a4ee9077a8695f091c147d"
+    },
+    "XGBoost_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "subsample": 0.8,
+        "n_estimators": 600,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      },
+      "selection_task_id": "7641f9a3dd893fcaf547f1212a8cc59cc059a43a657d49a941f40077bcef34ca"
+    },
+    "LightGBM": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "subsample": 0.8,
+        "num_leaves": 63,
+        "n_estimators": 900,
+        "learning_rate": 0.03
+      },
+      "selection_task_id": "b13120da50d5c5423184292a108ad793b10b0e1fe0bed96fd0d9b327941181af"
+    },
+    "LightGBM_GUIDED": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "subsample": 0.8,
+        "num_leaves": 63,
+        "n_estimators": 300,
+        "learning_rate": 0.03
+      },
+      "selection_task_id": "70f66d9bd8e406d44db849fa516710d9887e5076187bf5d8eb4ab6436b5f895d"
+    },
+    "NN_MLP": {
+      "status": "selected",
+      "source": "holdout_B_inner_epoch_selection",
+      "selected_epochs": 342,
+      "selection_task_id": "6604045e3b424d958566ff2847a58023988ebefd6daebb21450c39919e1fcaf2"
+    },
+    "NN_PINN_HARD": {
+      "status": "selected",
+      "source": "holdout_B_inner_epoch_selection",
+      "selected_epochs": 1000,
+      "selection_task_id": "665cbc99a720263ab9646f1beb7bc520809bbf02b73ded9d566be5aef78c1abf"
+    }
+  },
+  "primary_model_id": "NN_MLP",
+  "selection_fingerprint": {
+    "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/selection.json",
+    "sha256": "b9ddfac52293c7436a5d5ad7c0729a3c03e5c44c8bf7ad16a5b9df817dac6310",
+    "bytes": 10804
+  }
+}

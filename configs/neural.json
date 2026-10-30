@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "enabled_models": ["NN_MLP", "NN_PINN_HARD"],
+  "hidden_layers": [96, 96, 48],
+  "max_epochs": 1000,
+  "learning_rate": 0.002,
+  "weight_decay": 0.0001,
+  "early_stopping": {"validation_fraction": 0.2, "patience": 100, "min_delta": 0.0},
+  "bounds": [-100.0, 100.0],
+  "constraints": {"gas_monotonicity_weight": 0.5, "gas_concavity_weight": 0.3, "real_weight": 1.0, "collocation_weight": 1.0, "collocation_count": 3000}
+}

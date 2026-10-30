@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "status": "refit_complete",
+  "identity": {
+    "schema": 1,
+    "config": {
+      "train_csv": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_B_train.csv",
+      "classical_config": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/classical.json",
+      "neural_config": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/neural.json",
+      "model_scope": "all",
+      "workers": 8,
+      "threads": 1,
+      "device": "cuda:3",
+      "seed": 42,
+      "validation": "holdout",
+      "validation_fraction": 0.2,
+      "inner_folds": 3,
+      "outer_folds": 5,
+      "search": "randomized",
+      "search_candidates": 20,
+      "injection_mode": "volumes"
+    },
+    "B_fingerprint": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_B_train.csv",
+      "sha256": "56f11f281d7133dc0d1ef9e92578c901d7740375e68c8bb4be2670e8f2cbbd3f",
+      "bytes": 2829998
+    },
+    "classical_settings": {
+      "version": 1,
+      "enabled_models": [
+        "LinearRegression",
+        "Ridge",
+        "Lasso",
+        "ElasticNet",
+        "KNN",
+        "SVR_rbf",
+        "RandomForest",
+        "ExtraTrees",
+        "GradientBoosting",
+        "XGBoost",
+        "LightGBM"
+      ],
+      "missing_model_policy": "error",
+      "variants": [
+        "plain",
+        "guided"
+      ],
+      "guided": {
+        "anchor_count": 120,
+        "anchor_weight": 0.3,
+        "gas_monotonicity": true,
+        "bounds": [
+          -100.0,
+          100.0
+        ]
+      },
+      "models": {
+        "LinearRegression": {
+          "defaults": {},
+          "search": {}
+        },
+        "Ridge": {
+          "defaults": {
+            "alpha": 1.0
+          },
+          "search": {}
+        },
+        "Lasso": {
+          "defaults": {
+            "alpha": 0.01,
+            "max_iter": 8000
+          },
+          "search": {}
+        },
+        "ElasticNet": {
+          "defaults": {
+            "alpha": 0.01,
+            "max_iter": 8000
+          },
+          "search": {}
+        },
+        "KNN": {
+          "defaults": {
+            "n_neighbors": 7
+          },
+          "search": {}
+        },
+        "SVR_rbf": {
+          "defaults": {
+            "C": 20.0,
+            "gamma": "scale",
+            "kernel": "rbf"
+          },
+          "search": {}
+        },
+        "RandomForest": {
+          "defaults": {
+            "n_estimators": 500
+          },
+          "search": {
+            "n_estimators": [
+              300,
+              600,
+              900
+            ],
+            "max_depth": [
+              null,
+              8,
+              16
+            ],
+            "min_samples_leaf": [
+              1,
+              2,
+              4
+            ],
+            "max_features": [
+              "sqrt",
+              1.0,
+              0.5
+            ]
+          }
+        },
+        "ExtraTrees": {
+          "defaults": {
+            "n_estimators": 500
+          },
+          "search": {
+            "n_estimators": [
+              300,
+              600,
+              900
+            ],
+            "max_depth": [
+              null,
+              8,
+              16
+            ],
+            "min_samples_leaf": [
+              1,
+              2,
+              4
+            ],
+            "max_features": [
+              "sqrt",
+              1.0,
+              0.5
+            ]
+          }
+        },
+        "GradientBoosting": {
+          "defaults": {},
+          "search": {
+            "n_estimators": [
+              200,
+              400,
+              800
+            ],
+            "max_depth": [
+              2,
+              3,
+              4
+            ],
+            "learning_rate": [
+              0.03,
+              0.05,
+              0.1
+            ],
+            "subsample": [
+              0.8,
+              1.0
+            ]
+          }
+        },
+        "XGBoost": {
+          "defaults": {
+            "n_estimators": 600,
+            "max_depth": 4,
+            "learning_rate": 0.05,
+            "subsample": 0.9,
+            "colsample_bytree": 0.9
+          },
+          "search": {
+            "n_estimators": [
+              300,
+              600,
+              900
+            ],
+            "max_depth": [
+              3,
+              4,
+              6
+            ],
+            "learning_rate": [
+              0.03,
+              0.05,
+              0.1
+            ],
+            "subsample": [
+              0.8,
+              1.0
+            ],
+            "colsample_bytree": [
+              0.8,
+              1.0
+            ]
+          }
+        },
+        "LightGBM": {
+          "defaults": {
+            "n_estimators": 600,
+            "learning_rate": 0.05,
+            "subsample": 0.9,
+            "colsample_bytree": 0.9,
+            "subsample_freq": 1
+          },
+          "search": {
+            "n_estimators": [
+              300,
+              600,
+              900
+            ],
+            "num_leaves": [
+              15,
+              31,
+              63
+            ],
+            "learning_rate": [
+              0.03,
+              0.05,
+              0.1
+            ],
+            "subsample": [
+              0.8,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    "neural_settings": {
+      "version": 1,
+      "enabled_models": [
+        "NN_MLP",
+        "NN_PINN_HARD"
+      ],
+      "hidden_layers": [
+        96,
+        96,
+        48
+      ],
+      "max_epochs": 1000,
+      "learning_rate": 0.002,
+      "weight_decay": 0.0001,
+      "early_stopping": {
+        "validation_fraction": 0.2,
+        "patience": 100,
+        "min_delta": 0.0
+      },
+      "bounds": [
+        -100.0,
+        100.0
+      ],
+      "constraints": {
+        "gas_monotonicity_weight": 0.5,
+        "gas_concavity_weight": 0.3,
+        "real_weight": 1.0,
+        "collocation_weight": 1.0,
+        "collocation_count": 3000
+      }
+    },
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0",
+      "tqdm": "4.67.1",
+      "xgboost": "3.2.0",
+      "lightgbm": "4.7.0",
+      "torch": "2.10.0+cu128"
+    },
+    "source_fingerprints": {
+      "wag/__init__.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/__init__.py",
+        "sha256": "a727996c862a713a1c998ff4fe651604c6d6826f35c60c58bb3f2481ac0879c1",
+        "bytes": 96
+      },
+      "wag/artifacts.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/artifacts.py",
+        "sha256": "31a73c43536de7d1fa0a11503c323d6c182d62e497494e47c07ca14f4c524d37",
+        "bytes": 15214
+      },
+      "wag/cli.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/cli.py",
+        "sha256": "daf9e4816110fe146f28292c7b0ed14dbe012f3793a10e38a850c1d9ca64c6ea",
+        "bytes": 12613
+      },
+      "wag/config.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/config.py",
+        "sha256": "43068d9533acf2dc8c4141185a1270a8245c3e65fe958cd24541df3047e0ee55",
+        "bytes": 5147
+      },
+      "wag/cpu.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/cpu.py",
+        "sha256": "c792e82e60122f1f899d5543e5fd9a6a03706a273547535b6552901c6cc06184",
+        "bytes": 11682
+      },
+      "wag/data.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/data.py",
+        "sha256": "3983914ed601c54db2875b4bcc76aaef076c81b6aa542526669b66a0cd89dfee",
+        "bytes": 22309
+      },
+      "wag/evaluation.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/evaluation.py",
+        "sha256": "b93601ec174c2cd28d641e92a6cb8821ac18092545d487a25f544059287e01c3",
+        "bytes": 15088
+      },
+      "wag/features.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/features.py",
+        "sha256": "87dfa5f4c9367850f6cc7fd610fbea36bbd4c7a21658ecdabc4097d859be3153",
+        "bytes": 15823
+      },
+      "wag/models/__init__.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/models/__init__.py",
+        "sha256": "7015e30badaafc401af68c3661e93b8ff51fc7681a28f6ca342f2427df6580ab",
+        "bytes": 68
+      },
+      "wag/models/classical.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/models/classical.py",
+        "sha256": "3222e66315fd09c870b67133c61f59dacea09239e426e1dba61377ee6e0e2857",
+        "bytes": 11842
+      },
+      "wag/models/neural.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/models/neural.py",
+        "sha256": "3375db48ab3edd1b17e216faed6c7f3631e9ee7d0d40a00cc1dc5afbc216f254",
+        "bytes": 4781
+      },
+      "wag/neural.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/neural.py",
+        "sha256": "c01033ccc4322b8ce321c81ea9b4a3d58d662be0fcf310d53de31474d18ee976",
+        "bytes": 19744
+      },
+      "wag/plotting.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/plotting.py",
+        "sha256": "8ae95cb00f2089cbe6201094bec77433fbfdf1add8b2e53ecfcf33943f978056",
+        "bytes": 7183
+      },
+      "wag/progress.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/progress.py",
+        "sha256": "3e0884cb78acfc4b7350acc59c5458e286246583a205242b3e22a7e985dc2d4d",
+        "bytes": 706
+      },
+      "wag/reporting.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/reporting.py",
+        "sha256": "74d16f1b5c201546395de6bd0e8ff82f1e286cc7cefda7d02971763b09d2a244",
+        "bytes": 17245
+      },
+      "wag/runtime.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/runtime.py",
+        "sha256": "902407c2c832f0f025bed0031fa67200e0630da40bdd1c16f03279a6817769d2",
+        "bytes": 8725
+      },
+      "wag/training.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/training.py",
+        "sha256": "32cc4a8d3e4ef429f135eccd5022c929978dc16f5618e04adf8bf204cee73cca",
+        "bytes": 45953
+      },
+      "wag/workflow.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/workflow.py",
+        "sha256": "6c6dc6777046c2c1fa6144812192e17e39cea1b5e4f07cb97a6f9f3f176c2d05",
+        "bytes": 13022
+      },
+      "pyproject.toml": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/pyproject.toml",
+        "sha256": "dd007068497f25df902384e08328762e7d4f6eba30290476106ca2d0cdbeaab8",
+        "bytes": 598
+      }
+    },
+    "selection_rule": "RMSE, then MAE, then model_id; nested uses mean outer-fold metrics",
+    "task_attempt_limit": 2,
+    "validation_manifest_fingerprint": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/training_manifest.json",
+      "sha256": "afec195f45bb4649bc5521f5f8f64549553bd852e7b921f7938d782691de85d6",
+      "bytes": 20168
+    },
+    "selection_fingerprint": {
+      "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/selection.json",
+      "sha256": "b9ddfac52293c7436a5d5ad7c0729a3c03e5c44c8bf7ad16a5b9df817dac6310",
+      "bytes": 10804
+    }
+  },
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "B_rows": 4967,
+  "model_ids": [
+    "LinearRegression",
+    "LinearRegression_GUIDED",
+    "Ridge",
+    "Ridge_GUIDED",
+    "Lasso",
+    "Lasso_GUIDED",
+    "ElasticNet",
+    "ElasticNet_GUIDED",
+    "KNN",
+    "SVR_rbf",
+    "SVR_rbf_GUIDED",
+    "RandomForest",
+    "RandomForest_GUIDED",
+    "ExtraTrees",
+    "ExtraTrees_GUIDED",
+    "GradientBoosting",
+    "GradientBoosting_GUIDED",
+    "XGBoost",
+    "XGBoost_GUIDED",
+    "LightGBM",
+    "LightGBM_GUIDED",
+    "NN_MLP",
+    "NN_PINN_HARD"
+  ],
+  "primary_model_id": "NN_MLP",
+  "models_frozen": false,
+  "A_outcomes_accessed": false,
+  "device": {
+    "requested": "cuda:3",
+    "selected": "cuda:3",
+    "logical_index": 3,
+    "name": "NVIDIA L40S",
+    "visible_count": 8,
+    "CUDA_VISIBLE_DEVICES": null,
+    "torch_threads": 1,
+    "torch_interop_threads": 1
+  },
+  "final_refit_performed": true,
+  "model_config_hashes": {
+    "LinearRegression": "6fe00e309d90a91dfe30787e9a1d71e550508ad1e2d69281d79a818b2ff3f89d",
+    "LinearRegression_GUIDED": "9b7b52103ab249c7bbffba302ac0013d08ea38b5daca96bb1f520779273b033b",
+    "Ridge": "46ee7fd2053ec21b4c9120d8414ec17669b395b147e08685329568d8293dfd05",
+    "Ridge_GUIDED": "21e6ca335392dd18355efbb342fb048ddff38629bb91abd739a15577a1851036",
+    "Lasso": "2bf39516592c0457ddc1ed1b6511cee2db6b2c4cfad208eb471f915e23ec6e9d",
+    "Lasso_GUIDED": "e42886c6ee2f61760b3205bd74fcc22a373edf3eb4fb7275d789bc8504b28066",
+    "ElasticNet": "5da76d218502c16d80aae258ca6284956d1b5e05d35e2b3c1b8fa17eecb1b9a3",
+    "ElasticNet_GUIDED": "503bf97583f47775aac964148b010bdd3e9382348aaa7162658023102a34cfdd",
+    "KNN": "7d0ec1b9521729948ae9e0c414d5a76bee7d66f911ab6a870904826d3446e17d",
+    "SVR_rbf": "dbd2f9494ebd5f5ef642750909916769c05cb6bc4887f217226af69792c3ca2b",
+    "SVR_rbf_GUIDED": "074055e0869de3db1b10493812f4e5aa056ab5813dee62a8294b019a1397d710",
+    "RandomForest": "699c80e960558714135579350adcd5db8455efaec08b51f3e3e6f1ce698351d0",
+    "RandomForest_GUIDED": "a72e643f4cdd5391ff11848b6479a28576bf933d1b51759e8ab56fdff86f3a1f",
+    "ExtraTrees": "c2805450f87e5ffcf6ec64534974f59c3b7d50d9e4010efbb1bc22ed00f862a9",
+    "ExtraTrees_GUIDED": "5f9d39dabaa7ebe95a81a60ec9605be17bd1a4c4c1611d7a72b40665eb03f7d6",
+    "GradientBoosting": "907ac0a1eeb1b0b9065e2f0c40acad2cd71edf43f196d0caa0676fe9ba28268c",
+    "GradientBoosting_GUIDED": "a8591b69210715ce56dc8567a2f2972b745e09bde078584eeb683e6dba13293d",
+    "XGBoost": "3967b49c098a215643cebb3ff0b71b4e584e5867d75238cc0479754ced0601e3",
+    "XGBoost_GUIDED": "5534c7620c76f26cb7fc456707cfd1e940c96d2c6aaec014c115bc31eb776227",
+    "LightGBM": "1e05deac919fee0cb9bb9cd6bfe65f87b32ce0055749a8ba7d363ccbb3be3ff8",
+    "LightGBM_GUIDED": "227b34dec414bafa9423cd862dcc886e32ccb8d72d250e4352d2a8cb36416184",
+    "NN_MLP": "40f2b50640e7eeb4e1c86871ae1992a90ac498253e3ee0fb11ee97b980cfa769",
+    "NN_PINN_HARD": "aacb9000c338dbf6fe318ee2fe05151a156b80d2a7c03fffadb63508eeafc662"
+  }
+}

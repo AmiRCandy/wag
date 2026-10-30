@@ -1,0 +1,10 @@
+{
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "plan": {
+    "status": "selected",
+    "source": "holdout_development_selection",
+    "selected_params": {},
+    "selection_task_id": "3986bd89daff1959c7462e5c13d30584616dcb5e5373ef9bdb075498ed639c21"
+  },
+  "checksum": "bf7a044c1fb02b6ab84740806d016daa8853a8e86b08eda1edee5a0e6b4a58b0"
+}

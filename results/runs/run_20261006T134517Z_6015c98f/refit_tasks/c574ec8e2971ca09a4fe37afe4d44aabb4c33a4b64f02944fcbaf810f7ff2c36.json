@@ -1,0 +1,91 @@
+{
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "record": {
+    "model_id": "Ridge",
+    "kind": "classical",
+    "status": "saved",
+    "attempts": 1,
+    "plan": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {},
+      "selection_task_id": "21775237f0705a11c009588eb66c27dd77d1f178d178b5752472f5247ce0220d"
+    },
+    "fallback_performed": false,
+    "fit": {
+      "model_id": "Ridge",
+      "status": "fitted",
+      "seed": 2448016578,
+      "phase": "final_all_B",
+      "fold": 0,
+      "best_params": {},
+      "warnings": [],
+      "native_threads": 1,
+      "inner_cv_rmse": null,
+      "search_performed": false,
+      "fallback_performed": false
+    },
+    "entry": {
+      "model_id": "Ridge",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.joblib",
+        "metadata": "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.joblib",
+          "sha256": "0279f9352197548af5d362a0ace79cf277df1e330943a1c2cadd8a73cdc57e79",
+          "bytes": 2416
+        },
+        "final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/8f5db5c7f3d24d4c40b4c9cfc3924de6a1e1c3357af462f9060c53c0516e06ca.metadata.json",
+          "sha256": "bf4ef02f34ed591536fc42d4e47c298597fa18b7e0a85c11124b37893434dce5",
+          "bytes": 9462
+        }
+      },
+      "configuration_hash": "46ee7fd2053ec21b4c9120d8414ec17669b395b147e08685329568d8293dfd05",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          -0.6531610847813201,
+          6.326482031808045,
+          5.129606704748412,
+          2.656012818921254,
+          -2.9427870376261542,
+          4.219343877606782,
+          7.40345072436542,
+          1.2178044043040823,
+          10.230710852815916,
+          3.8369916253807186,
+          3.3755199609403657,
+          3.066372467987632,
+          10.636426175442098,
+          2.220672768333577,
+          3.9172571241382346,
+          3.1457544090186405
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    }
+  },
+  "checksum": "92f446382594c80b107d8ddf08e2ee21ac3078593a2b9c0d71f1bf21cc01426d"
+}

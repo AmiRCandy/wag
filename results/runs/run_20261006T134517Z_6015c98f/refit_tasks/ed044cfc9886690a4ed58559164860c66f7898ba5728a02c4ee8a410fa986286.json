@@ -1,0 +1,103 @@
+{
+  "identity_hash": "f19a10eb9d830a82f0c0d6bc58b7103e844b3307e0d262beba86af759d2fee67",
+  "record": {
+    "model_id": "XGBoost",
+    "kind": "classical",
+    "status": "saved",
+    "attempts": 1,
+    "plan": {
+      "status": "selected",
+      "source": "holdout_development_selection",
+      "selected_params": {
+        "subsample": 0.8,
+        "n_estimators": 900,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      },
+      "selection_task_id": "2afdb9c59bf70ea9884b4d71edd8673963080d8d65a4ee9077a8695f091c147d"
+    },
+    "fallback_performed": false,
+    "fit": {
+      "model_id": "XGBoost",
+      "status": "fitted",
+      "seed": 2712715347,
+      "phase": "final_all_B",
+      "fold": 0,
+      "best_params": {
+        "subsample": 0.8,
+        "n_estimators": 900,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      },
+      "warnings": [],
+      "native_threads": 1,
+      "inner_cv_rmse": null,
+      "search_performed": false,
+      "fallback_performed": false
+    },
+    "entry": {
+      "model_id": "XGBoost",
+      "kind": "classical",
+      "files": {
+        "model": "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.joblib",
+        "metadata": "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.metadata.json"
+      },
+      "fingerprints": {
+        "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.joblib": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.joblib",
+          "sha256": "86c2883d4fbd49fead224a88634199a59a2cdd9c67955bf2767ae901757bed39",
+          "bytes": 1256395
+        },
+        "final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.metadata.json": {
+          "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/final_models/24564f4f168ee406e5f86d690ade31f0a00341530cf7fc04d01f729ceb05f817.metadata.json",
+          "sha256": "0d8756878f44edbb10e51dc9163818d78706217a530f23cbe88b507b49de25e4",
+          "bytes": 9855
+        }
+      },
+      "configuration_hash": "3967b49c098a215643cebb3ff0b71b4e584e5867d75238cc0479754ced0601e3",
+      "verification": {
+        "row_ids": [
+          "B:732decd0e31626e6599ec9888bad45838026613837124c1f86c9612b758ab3ab",
+          "B:751b27238377a97a34724a51eddf8d02208ae9a7a2f9bb908981bbff00bf6245",
+          "B:9cf2191b0d44d5f4216b2cadbb0ff5c754b4230ff1da0aec544c869cf6fbb6ce",
+          "B:ad8bb1145484e3488779a86884c755b6359ba2b2168141279e40392ca07cdc09",
+          "B:d02eb4f2d2a8f1ea2eaaa7c01478a562012b45a87bc0c1097b2a3c7451b8afaf",
+          "B:639f4e8950645b95836428be79669b8623064db67b66ec11a9235b8824941c00",
+          "B:62f7fee401659e27e8bba94eac14d4b1b2ac113d2bc945271a591a10f29cadc1",
+          "B:3865c7aabc2a613c592971180b246987534c665a9f370690b40aa6e944b556c4",
+          "B:1653d04199f2753d966f3bf014a584ed19e2b99fb7d07813ca53176298a12e78",
+          "B:241358f71da11dbdab5efc0bb866975463bf2e4bf941bb94deedf29c980cbae9",
+          "B:de6f892eb08fc473f619cebfaf1211866ca1f01f5448196689981780f6e3579a",
+          "B:c4cad9a368b4ba4e5ed4a82f4f37bbd0359246008db8a0dfb5ce5b0578e4694b",
+          "B:c0ab98fe0b562a3203c35b098260e7c544da1b469acf6922bc6460ffee99cdd1",
+          "B:e0100c969fc8828e346efa7c8fb54135488c3e024329a76b71cd52f538f4d1e2",
+          "B:0f48b1833d59711a43351baa2a12fc244eb60b9298aca51aaa3a59d0a92d5015",
+          "B:3bcc47e6b9de28b166af6c9e228b3a49deb32f56e01323413de2291e5dfea8d4"
+        ],
+        "prediction": [
+          1.3891199827194214,
+          9.667903900146484,
+          5.983010768890381,
+          2.902514934539795,
+          1.5146353244781494,
+          6.1231842041015625,
+          7.920249938964844,
+          -2.9517807960510254,
+          16.57892417907715,
+          4.311707019805908,
+          2.223395824432373,
+          4.5140557289123535,
+          7.342184543609619,
+          1.3010146617889404,
+          6.824209213256836,
+          -3.6612026691436768
+        ],
+        "rtol": 1e-05,
+        "atol": 0.0001
+      }
+    }
+  },
+  "checksum": "5b1385fffdb19eb1f7487402cf8a88cf35539b648c2ed114fe5301ef0181225f"
+}

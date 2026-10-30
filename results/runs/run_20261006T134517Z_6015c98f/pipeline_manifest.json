@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "status": "pipeline_complete",
+  "identity": {
+    "config": {
+      "train_csv": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_B_train.csv",
+      "test_csv": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/WAG_simulation_dataset_A_test.csv",
+      "run_dir": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f",
+      "classical_config": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/classical.json",
+      "neural_config": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/neural.json",
+      "model_scope": "all",
+      "workers": 8,
+      "threads": 1,
+      "device": "cuda:3",
+      "seed": 42,
+      "validation": "holdout",
+      "validation_fraction": 0.2,
+      "inner_folds": 3,
+      "outer_folds": 5,
+      "search": "randomized",
+      "search_candidates": 20,
+      "injection_mode": "volumes"
+    },
+    "no_plots": false,
+    "sources": {
+      "wag/__init__.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/__init__.py",
+        "sha256": "a727996c862a713a1c998ff4fe651604c6d6826f35c60c58bb3f2481ac0879c1",
+        "bytes": 96
+      },
+      "wag/artifacts.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/artifacts.py",
+        "sha256": "31a73c43536de7d1fa0a11503c323d6c182d62e497494e47c07ca14f4c524d37",
+        "bytes": 15214
+      },
+      "wag/cli.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/cli.py",
+        "sha256": "daf9e4816110fe146f28292c7b0ed14dbe012f3793a10e38a850c1d9ca64c6ea",
+        "bytes": 12613
+      },
+      "wag/config.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/config.py",
+        "sha256": "43068d9533acf2dc8c4141185a1270a8245c3e65fe958cd24541df3047e0ee55",
+        "bytes": 5147
+      },
+      "wag/cpu.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/cpu.py",
+        "sha256": "c792e82e60122f1f899d5543e5fd9a6a03706a273547535b6552901c6cc06184",
+        "bytes": 11682
+      },
+      "wag/data.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/data.py",
+        "sha256": "3983914ed601c54db2875b4bcc76aaef076c81b6aa542526669b66a0cd89dfee",
+        "bytes": 22309
+      },
+      "wag/evaluation.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/evaluation.py",
+        "sha256": "b93601ec174c2cd28d641e92a6cb8821ac18092545d487a25f544059287e01c3",
+        "bytes": 15088
+      },
+      "wag/features.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/features.py",
+        "sha256": "87dfa5f4c9367850f6cc7fd610fbea36bbd4c7a21658ecdabc4097d859be3153",
+        "bytes": 15823
+      },
+      "wag/models/__init__.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/models/__init__.py",
+        "sha256": "7015e30badaafc401af68c3661e93b8ff51fc7681a28f6ca342f2427df6580ab",
+        "bytes": 68
+      },
+      "wag/models/classical.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/models/classical.py",
+        "sha256": "3222e66315fd09c870b67133c61f59dacea09239e426e1dba61377ee6e0e2857",
+        "bytes": 11842
+      },
+      "wag/models/neural.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/models/neural.py",
+        "sha256": "3375db48ab3edd1b17e216faed6c7f3631e9ee7d0d40a00cc1dc5afbc216f254",
+        "bytes": 4781
+      },
+      "wag/neural.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/neural.py",
+        "sha256": "c01033ccc4322b8ce321c81ea9b4a3d58d662be0fcf310d53de31474d18ee976",
+        "bytes": 19744
+      },
+      "wag/plotting.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/plotting.py",
+        "sha256": "8ae95cb00f2089cbe6201094bec77433fbfdf1add8b2e53ecfcf33943f978056",
+        "bytes": 7183
+      },
+      "wag/progress.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/progress.py",
+        "sha256": "3e0884cb78acfc4b7350acc59c5458e286246583a205242b3e22a7e985dc2d4d",
+        "bytes": 706
+      },
+      "wag/reporting.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/reporting.py",
+        "sha256": "74d16f1b5c201546395de6bd0e8ff82f1e286cc7cefda7d02971763b09d2a244",
+        "bytes": 17245
+      },
+      "wag/runtime.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/runtime.py",
+        "sha256": "902407c2c832f0f025bed0031fa67200e0630da40bdd1c16f03279a6817769d2",
+        "bytes": 8725
+      },
+      "wag/training.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/training.py",
+        "sha256": "32cc4a8d3e4ef429f135eccd5022c929978dc16f5618e04adf8bf204cee73cca",
+        "bytes": 45953
+      },
+      "wag/workflow.py": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/wag/workflow.py",
+        "sha256": "6c6dc6777046c2c1fa6144812192e17e39cea1b5e4f07cb97a6f9f3f176c2d05",
+        "bytes": 13022
+      },
+      "pyproject.toml": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/pyproject.toml",
+        "sha256": "dd007068497f25df902384e08328762e7d4f6eba30290476106ca2d0cdbeaab8",
+        "bytes": 598
+      }
+    },
+    "settings": {
+      "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/classical.json": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/classical.json",
+        "sha256": "98175056a7d488117b478c34dc0a566cf9b9fbc9a5944b3a0886144d013a2c58",
+        "bytes": 1936
+      },
+      "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/neural.json": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/configs/neural.json",
+        "sha256": "5df9a603166563c4c7254174a690f76e220983777c63bd52ec1af78b6ec9ea80",
+        "bytes": 442
+      }
+    }
+  },
+  "identity_hash": "543f63c7342561ef39dccd8b38162805a0ec71c04247b11b47f23ca80c7d5155",
+  "created_at_utc": "2026-10-06T13:45:17.033925+00:00",
+  "stages": {
+    "validation": {
+      "status": "validation_complete",
+      "run_dir": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f",
+      "B_rows": 4967,
+      "primary_model_id": "NN_MLP",
+      "failures": 0,
+      "skipped": 1,
+      "A_outcomes_accessed": false,
+      "final_refit_performed": false,
+      "models_frozen": false
+    },
+    "refit": {
+      "status": "frozen",
+      "run_dir": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f",
+      "B_rows": 4967,
+      "primary_model_id": "NN_MLP",
+      "models_frozen": true,
+      "final_refit_performed": true,
+      "A_outcomes_accessed": false
+    },
+    "freeze": {
+      "status": "frozen",
+      "fingerprint": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/frozen_manifest.json",
+        "sha256": "3474ca80205f9cf68fe15e7727b3a13b3ebf7c255c0ff5328148446deeb4c5b9",
+        "bytes": 105324
+      }
+    },
+    "evaluation": {
+      "status": "evaluation_complete",
+      "evaluation_dir": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd",
+      "A_rows": 995,
+      "primary_model_id": "NN_MLP",
+      "model_ids": [
+        "LinearRegression",
+        "LinearRegression_GUIDED",
+        "Ridge",
+        "Ridge_GUIDED",
+        "Lasso",
+        "Lasso_GUIDED",
+        "ElasticNet",
+        "ElasticNet_GUIDED",
+        "KNN",
+        "SVR_rbf",
+        "SVR_rbf_GUIDED",
+        "RandomForest",
+        "RandomForest_GUIDED",
+        "ExtraTrees",
+        "ExtraTrees_GUIDED",
+        "GradientBoosting",
+        "GradientBoosting_GUIDED",
+        "XGBoost",
+        "XGBoost_GUIDED",
+        "LightGBM",
+        "LightGBM_GUIDED",
+        "NN_MLP",
+        "NN_PINN_HARD"
+      ],
+      "training_performed": false,
+      "interpretation": "simulated cross-family A test; not observed field validation",
+      "fingerprint": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd/evaluation_manifest.json",
+        "sha256": "3b379c56564ec013609a3b2b6e3df2addbe88b22d4e0ebf64b5b4a4daf09e208",
+        "bytes": 4206
+      }
+    },
+    "report": {
+      "status": "plots_complete",
+      "report_dir": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/pipeline_report_20261006T135534Z_cec26186",
+      "primary_model_id": "NN_MLP",
+      "plots": [
+        {
+          "path": "figures/B_holdout_validation_parity.png",
+          "phase": "B_holdout_validation",
+          "model_id": "NN_MLP",
+          "n": 994
+        },
+        {
+          "path": "figures/B_holdout_validation_residuals.png",
+          "phase": "B_holdout_validation",
+          "model_id": "NN_MLP",
+          "n": 994
+        },
+        {
+          "path": "figures/A_external_simulation_parity.png",
+          "phase": "A_external_simulation",
+          "model_id": "NN_MLP",
+          "n": 995
+        },
+        {
+          "path": "figures/A_external_simulation_residuals.png",
+          "phase": "A_external_simulation",
+          "model_id": "NN_MLP",
+          "n": 995
+        }
+      ],
+      "training_performed": false,
+      "fingerprint": {
+        "path": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/pipeline_report_20261006T135534Z_cec26186/report_manifest.json",
+        "sha256": "793267f4f12a52c3d03e499e76a9935039cc8c7d2fd196b20eb7a4f7ba087227",
+        "bytes": 3008
+      }
+    }
+  },
+  "events": [
+    {
+      "stage": "evaluation",
+      "directory": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/evaluations/pipeline_A_20261006T135524Z_c23d8cdd"
+    },
+    {
+      "stage": "report",
+      "directory": "/mnt/disk3/saberi/co2-wag-pinn-saber/co2-wag-pinn/results/runs/run_20261006T134517Z_6015c98f/reports/pipeline_report_20261006T135534Z_cec26186"
+    }
+  ],
+  "A_outcomes_accessed": true,
+  "primary_model_id": "NN_MLP",
+  "completed_at_utc": "2026-10-06T13:55:43.717414+00:00",
+  "checksum": "fa1ad24fe8b2e9634ccf2fad07bf96e6e71ddd5f1f3d755851be9451e39e8ae1"
+}
